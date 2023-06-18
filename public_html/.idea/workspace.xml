@@ -13,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -33,8 +33,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/OSPanel/domains/product-vizit",
+    "last_opened_file_path": "C:/OSPanel/domains/product-vizit/stroiKontrol_site/111/public_html/index.html",
     "list.type.of.created.stylesheet": "CSS",
+    "settings.editor.selected.configurable": "JavaScript.Libraries",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -48,10 +49,16 @@
       <updated>1686731798828</updated>
       <workItem from="1686731800000" duration="23137000" />
       <workItem from="1686906947504" duration="7253000" />
+      <workItem from="1687088283702" duration="9000" />
+      <workItem from="1687088293944" duration="18295000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

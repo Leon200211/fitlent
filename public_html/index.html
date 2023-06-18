@@ -43,40 +43,65 @@
 
   </div>
 </header>
-<section class="opportunities">
-    <div class="container">
-        <div class="opportunities-title">
-            Возможности 'СтройКонтроль'
-        </div>
-        <div class="opportunities-suptitle">Lorem ipsum solidare ible gailo</div>
-        <div class="opts-body">
-            <div class="opts-left">
-                <div class="accordeon">
-                    <div class="accordeon-title" id="1st-screen.png">Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLoremipsumLorem<i class="fa-solid fa-chevron-down"></i></div>
-                    <div class="accordeon-content active">Lorem ipsum dolor sil ametLorem ipsum dolor sil ametLorem ipsum dolor sil ametLorem ipsum dolor sil ametLorem ipsum dolor sil ametLorem ipsum dolor sil ametLorem ipsum dolor sil ametLorem ipsum dolor sil ametLorem ipsum dolor sil ametLorem ipsum dolor sil ametLorem ipsum dolor sil ametLorem ipsum dolor sil amet</div>
-                </div>
-                <div class="accordeon">
-                    <div class="accordeon-title" id="2nd-screen.png">Lorem ipsum<i class="fa-solid fa-chevron-up"></i></div>
-                    <div class="accordeon-content">Lorem ipsum dolor sil amet</div>
-                </div>
-                <div class="accordeon" >
-                    <div class="accordeon-title" id="3rd-screen.png">Lorem ipsum<i class="fa-solid fa-chevron-up"></i></div>
-                    <div class="accordeon-content">Lorem ipsum dolor sil amet </div>
-                </div>
-            </div>
-            <div class="opts-right">
-                <img src="imgs/1st-screen.png" alt="" style="width: 900px; height: 600px; margin-top: 10px" class="accordeon-img">
-            </div>
-        </div>
-        <div class="opts-btn-cont">
-            <div class="opts-btn">
-                <a href="#" class="opts-order">ЗАКАЗАТЬ</a>
-            </div>
+<div class="container">
+<div class="wrapp">
+    <div class="section">
+        <div class="accordion">
+            <ul class="accordion__list">
+                <li class="accordion__item active" data-id="1">
+                    <h3 class="accordion__header">
+                    <span class="accordion__bl">
+                        <span class="accordion__bl-line"></span>
+                        <span class="accordion__bl-line"></span>
+                    </span>
+                        <div class="span accordion__title">1111</div>
+                    </h3>
+                    <div class="accordion__body">
+                        <p class="accordion__descript">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolore facere laboriosam magni, natus sunt.
+                        </p>
+                    </div>
+                </li>
+                <li class="accordion__item" data-id="2">
+                    <h3 class="accordion__header">
+                    <span class="accordion__bl">
+                        <span class="accordion__bl-line"></span>
+                        <span class="accordion__bl-line"></span>
+                    </span>
+                        <div class="span accordion__title">1111</div>
+                    </h3>
+                    <div class="accordion__body">
+                        <p class="accordion__descript">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolore facere laboriosam magni, natus sunt.
+                        </p>
+                    </div>
+                </li>
+                <li class="accordion__item" data-id="3">
+                    <h3 class="accordion__header">
+                    <span class="accordion__bl">
+                        <span class="accordion__bl-line"></span>
+                        <span class="accordion__bl-line"></span>
+                    </span>
+                        <div class="span accordion__title">1111</div>
+                    </h3>
+                    <div class="accordion__body">
+                        <p class="accordion__descript">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolore facere laboriosam magni, natus sunt.
+                        </p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
-</section>
+    <div class="accordeon-imgs">
+        <img id="1-img" src="imgs/1st-screen.png" alt="1" class="accordeon-img active">
+        <img id="2-img" src="imgs/2nd-screen.png" alt="2" class="accordeon-img">
+        <img id="3-img" src="imgs/3rd-screen.png" alt="3" class="accordeon-img">
+    </div>
+</div>
+</div >
 <section class="why-we">
-    <div class="container">
+    <div class="container" style="padding-bottom: 50px">
         <div class="list">
             <ul class="list-title">Почему мы?
                 <li class="list-body">Мы заменим неточности</li>
@@ -92,44 +117,133 @@
                 <li class="list-supbody">Покупая подписку вы арендуете команду профессионалов, которые будут следить за корректной работой нашего приложения</li>
             </ol>
         </div>
-    </div>
+    </div >
 </section>
 <section class="bestsides">
-    <div class="container">
-        <div class="questions-answers">
-            <div class="question-answer">
-                <span class="question">Как узнать какой тариф мне подходит?</span><br><br>
-                <span class="answer" hidden="true">Позвоните на нашу горячую линию</span>
+    <div class="container" style="margin-top: 50px">
+        <div class="faq-acordion">
+            <div class="faq-accordion-item" id="question1">
+                <a href="#question1" class="faq-accordion-link">
+                    Как часто ты ходишь на пляж?
+                    <ion-icon name="chevron-up-outline" class="add-outline"></ion-icon>
+                    <ion-icon name="chevron-down-outline" class="remove-outline"></ion-icon>
+                </a>
+                <div class="faq-answer">
+                    <p>Давненько не был, хотя щас лето, 30 градусов</p>
+                </div>
             </div>
-            <div class="question-answer">
-                <span class="question">Как узнать какой тариф мне подходит?</span>
-                <span class="answer" hidden="true">Позвоните на нашу горячую линию</span>
+        </div>
+        <div class="faq-acordion">
+            <div class="faq-accordion-item" id="question2">
+                <a href="#question2" class="faq-accordion-link">
+                    Как часто ты ходишь на пляж?
+                    <ion-icon name="chevron-up-outline" class="add-outline"></ion-icon>
+                    <ion-icon name="chevron-down-outline" class="remove-outline"></ion-icon>
+                </a>
+                <div class="faq-answer">
+                    <p>Давненько не был, хотя щас лето, 30 градусов</p>
+                </div>
             </div>
-            <div class="question-answer">
-                <span class="question">Как узнать какой тариф мне подходит?</span>
-                <span class="answer" hidden="true">Позвоните на нашу горячую линию</span>
+        </div>
+        <div class="faq-acordion">
+            <div class="faq-accordion-item" id="question3">
+                <a href="#question3" class="faq-accordion-link">
+                    Давно ходил в ванную?
+                    <ion-icon name="chevron-up-outline" class="add-outline"></ion-icon>
+                    <ion-icon name="chevron-down-outline" class="remove-outline"></ion-icon>
+                </a>
+                <div class="faq-answer">
+                    <p>Давненько не был, хотя щас лето, 30 градусов</p>
+                </div>
             </div>
-            <div class="question-answer">
-                <span class="question">Как узнать какой тариф мне подходит?</span>
-                <span class="answer" hidden="true">Позвоните на нашу горячую линию</span>
+        </div>
+        <div class="faq-acordion">
+            <div class="faq-accordion-item" id="question4">
+                <a href="#question4" class="faq-accordion-link">
+                    Как часто ты ходишь за мороженным?
+                    <ion-icon name="chevron-up-outline" class="add-outline"></ion-icon>
+                    <ion-icon name="chevron-down-outline" class="remove-outline"></ion-icon>
+                </a>
+                <div class="faq-answer">
+                    <p>Давненько не был, хотя щас лето, 30 градусов</p>
+                </div>
             </div>
-            <div class="question-answer">
-                <span class="question">Как узнать какой тариф мне подходит?</span>
-                <span class="answer" hidden="true">Позвоните на нашу горячую линию</span>
-            </div>
-            <div class="question-answer">
-                <span class="question">Как узнать какой тариф мне подходит?</span>
-                <span class="answer" hidden="true">Позвоните на нашу горячую линию</span>
-            </div>
-            <div class="question-answer">
-                <span class="question">Как узнать какой тариф мне подходит?</span>
-                <span class="answer" hidden="true">Позвоните на нашу горячую линию</span>
+        </div>
+        <div class="faq-acordion">
+            <div class="faq-accordion-item" id="question5">
+                <a href="#question5" class="faq-accordion-link">
+
+                    Как часто ты ходишь на пляж?
+                    <ion-icon name="chevron-up-outline" class="add-outline"></ion-icon>
+                    <ion-icon name="chevron-down-outline" class="remove-outline"></ion-icon>
+                </a>
+                <div class="faq-answer">
+                    <p>Давненько не был, хотя щас лето, 30 градусов</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 <footer class="footer"><div class="container">123</div></footer>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="app.js"></script>
 <script src="https://kit.fontawesome.com/ffa20e961b.js" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
+
+<!--<div class="opportunities-title">-->
+<!--    123-->
+<!--</div>-->
+<!--<div class="opportunities-body">-->
+<!--    <div class="accordion">-->
+<!--        <div class="accordion-item">-->
+<!--            <div class="accordion-text active" id="1st-screen.png">-->
+<!--                <a href="" class="accordion-link"><ion-icon name="checkbox-outline" class="ion-checkbox"></ion-icon>-->
+<!--                    Детали и ход перед глазами-->
+<!--                    <ion-icon name="chevron-up-outline" class="chevron-up"></ion-icon>-->
+<!--                    <ion-icon name="chevron-down-outline" class="chevron-down"></ion-icon>-->
+<!--                </a>-->
+<!--                <div class="accordion-answer">-->
+<!--                    1234123412341234123412341234123412341234123412341234123412341234-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="accordion-img active">-->
+<!--                <img src="imgs/1st-screen.png" alt="" style="width: 1100px; height: 800px">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="accordion-item">-->
+<!--            <div class="accordion-text" id="2nd-screen.png">-->
+<!--                <a href="" class="accordion-link"><ion-icon name="checkbox-outline" class="ion-checkbox"></ion-icon>-->
+<!--                    Детали и ход перед глазами-->
+<!--                    <ion-icon name="chevron-up-outline" class="chevron-up"></ion-icon>-->
+<!--                    <ion-icon name="chevron-down-outline" class="chevron-down"></ion-icon>-->
+<!--                </a>-->
+<!--                <div class="accordion-answer">-->
+<!--                    1234123412341234123412341234123412341234123412341234123412341234123412341234123412341234123412341234-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="accordion-img">-->
+<!--                <img src="imgs/2nd-screen.png" alt="" style="width: 1100px; height: 800px">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="accordion-item">-->
+<!--            <div class="accordion-text" id="3rd-screen.png">-->
+<!--                <a href="" class="accordion-link"><ion-icon name="checkbox-outline" class="ion-checkbox"></ion-icon>-->
+<!--                    Детали и ход перед глазами-->
+<!--                    <ion-icon name="chevron-up-outline" class="chevron-up"></ion-icon>-->
+<!--                    <ion-icon name="chevron-down-outline" class="chevron-down"></ion-icon>-->
+<!--                </a>-->
+<!--                <div class="accordion-answer">-->
+<!--                    1234-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="accordion-img">-->
+<!--                <img src="imgs/3rd-screen.png" alt="" style="width: 800px; height: 600px">-->
+<!--            </div>-->
+<!--        </div>-->
+
+
+<!--    </div>-->
+<!--</div>-->
