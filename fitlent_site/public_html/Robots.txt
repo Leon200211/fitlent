@@ -1,0 +1,4 @@
+User-agent: *
+Crawl-delay: 60
+Host: ritualserviceufa.ru
+Disallow: index.html

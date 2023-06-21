@@ -1,0 +1,111 @@
+.modal-select{
+    padding: 15px;
+    border-radius: 5px;
+    transition: .3s;
+}
+#modal-name{
+    text-align: center;
+}
+#modal-name:focus{
+    text-align: center;
+}
+#modal-phone{
+    text-align: center;
+}
+#modal-phone:focus{
+    text-align: center;
+}
+.modal-select:after{
+    border-radius: 20px;
+    transition: .3s;
+}
+.modal-send{
+    background-color: #adb5bd;
+    border: 1px solid transparent;
+    padding: 10px 15px;
+    border-radius: 15px;
+    transition: .5s;
+}
+.modal-send:hover{
+    border: 1px solid black;
+    transition: .5s;
+}
+.modal-input{
+    display: flex;
+    width: 500px;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    border: 1px solid #737373;
+}
+.modal-input::placeholder{
+    text-align: center;
+    color: #b9b9b9;
+
+}
+.modal-close{
+    text-align: center;
+    max-width: 25px;
+    position: relative;
+    top: -20px;
+    left: 510px;
+    border: #333333 1px solid;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+.modal-close:hover{
+    border: 1px solid transparent;
+    color: white;
+    background-color: #672598;
+    transition: .5s;
+}
+.modal-container{
+    display: none;
+    justify-content: center;
+    /*text-align: center;*/
+    align-items: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 101;
+}
+.modal-card{
+    z-index: 103;
+    text-align: center;
+    padding: 30px 50px;
+    width: 600px;
+    color: #151515;
+    border-radius: 5px;
+    background-color: white;
+}
+.modal-inline{
+    z-index: 102;
+    position: absolute;
+    background: linear-gradient(#4343ff, violet, blueviolet);
+    width: 640px;
+    height: 510px;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+@media (max-width: 600px) {
+    .modal-card{
+        width: 75%;
+        position: relative;
+    }
+    .modal-inline{
+        position: absolute;
+        height: 90%;
+        width: 80%;
+        padding: 0;
+    }
+    .modal-card input, .modal-card select{
+        width: 80%;
+    }
+    .modal-card input {
+        margin-left: 23px;
+    }
+}

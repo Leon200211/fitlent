@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <meta name="description" content="Разработка сайтов от любой сложности Fitlent профессионально и быстро! Создадим сайт для вашего бизнеса по низкой цене в кротчайшие сроки. Работаем по всей России.">
+    <meta property="og:title" content="Разработка сайтов любой сложности. Заказать сайт под ключ.">
+    <meta property="og:description" content="Разработка сайтов любой сложности от Fitlent профессионально и быстро! Создадим сайт для вашего бизнеса по низкой цене в кротчайшие сроки. Работаем по всей России.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fitlent.ru">
+    <meta property="title" content="Разработка сайтов любой сложности. Заказать сайт под ключ.">
+    <meta property="description" content="Разработка сайтов любой сложности от Fitlent профессионально и быстро! Создадим сайт для вашего бизнеса по низкой цене в кротчайшие сроки. Работаем по всей России.">
+    <meta property="type" content="website">
+    <meta property="url" content="https://fitlent.ru">
+    <meta name="keywords" content="Разработка сайтов, CSS, JS, PHP, 1С, 1C, 1C-Bitrix, 1С-Битрикс, joomla, tilda, wordpress, modx, Создание сайтов, Интеграции, тильда, вордпресс, веб-разработка, интернет разработка">
+    <meta name="author" content="FitLent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>Разработка сайтов и приложений, аналитика и интеграции</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-liberty-market.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="icon" href="assets/images/sitelogo.png">
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/mainlogo.png" alt="">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="index.html" id="main-head">Главная</a></li>
+                        <li><a href="#rates" id="rates-head">Тарифы</a></li>
+                        <li><a href="#about-us" id="about-head">О нас</a></li>
+                        <li><a href="#portfolio" id="portfolio-head">Портфолио</a></li>
+                    </ul>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <div class="main-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+        </div>
+        <div class="col-lg-5 offset-lg-1">
+            <h6>FITLENT</h6>
+            <h2 style="color: #ffffff">Разработка, интеграции, доработка</h2>
+            <p>FitLent - одна из ведущих компаний на рынке разработки</p>
+            <div class="buttons">
+              <div class="border-button">
+                <a href="#rates">Посмотреть тарифы</a>
+              </div>
+              <div class="main-button">
+                <a href="#portfolio">Наше портфолио</a>
+              </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal-container">
+    <div class="modal-inline">
+    </div>
+    <div class="modal-card">
+      <div class="modal-close">✖</div>
+      <p style="color: black">Закажите сайт только у нас и получите поддержку на полгода бесплатно</p>
+      <h4 style="color: black">Введите ваши контактные данные:</h4>
+      <br>
+      <form action="mail.php" method="post">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
+        <input type="text" id="modal-name" class="modal-input" name="name" placeholder="Ваше имя" minlength="3">
+        <input type="tel" id="modal-phone" class="modal-input" name="phone" placeholder="Номер телефона" data-mask="+7(999)999-99-99">
+        <select style="padding: 15px" class="modal-select" name="rates">
+          <option value="" id="dynamic-select"></option>
+          <option value="bitrix-shop">Интернет магазин(Битрикс)</option>
+          <option value="bitrix-crm">Корпоративная система(Битрикс)</option>
+          <option value="crm">Корпоративная система</option>
+          <option value="shop">Интернет магазин</option>
+          <option value="landing">Лендинг</option>
+          <option value="business-card">Визитка</option>
+        </select>
+        <br>
+        <br>
+        <button class="modal-send">отправить</button>
+      </form>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+
+
+      </script>
+    </div>
+
+  </div>
+  <!-- ***** секция1 ***** -->
+  <section id="rates">
+  <div class="categories-collections">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="collections">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="section-heading">
+                  <div class="line-dec"></div>
+                  <h2>Наши <em>услуги</em></h2>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="owl-collection owl-carousel">
+                  <div class="item">
+                    <img src="assets/images/landing-page-temp.jpg" alt="">
+                    <div class="down-content">
+                      <h4>Лендинг</h4>
+                      <span class="collection"><strong>от 18.000₽</strong></span>
+                      <span class="category">Категория:<br><strong>Разработка сайта</strong></span>
+                      <div class="main-button">
+                        <a href="#openModal" class="open_modal" data="Лендинг" >Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="assets/images/site-vizitka.jpg" alt="">
+                    <div class="down-content">
+                      <h4>Сайт-визитка</h4>
+                      <span class="collection"><strong>от 15.000₽</strong></span>
+                      <span class="category">Категория:<br><strong>Разработка сайта</strong></span>
+                      <div class="main-button">
+                        <a href="#openModal" class="open_modal"  data="Сайт визитка" >Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="assets/images/corporat-system.jpg" alt="">
+                    <div class="down-content">
+                      <h4>Корпоративная система</h4>
+                      <span class="collection"><strong>от 154.000₽</strong></span>
+                      <span class="category">Категория:<br><strong>Разработка сайта</strong></span>
+                      <div class="main-button">
+                        <a href="#openModal" class="open_modal" data="Корпоративная система">Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="assets/images/internet-magazin.jpg" alt="">
+                    <div class="down-content">
+                      <h4>Интернет магазин</h4>
+                      <span class="collection"><strong>от 115.000₽</strong></span>
+                      <span class="category">Категория:<br><strong>Разработка сайта</strong></span>
+                      <div class="main-button">
+                        <a href="#openModal" class="open_modal" data="Интернет магазин">Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="assets/images/bitrix-onlineshop.jpg" alt="">
+                    <div class="down-content">
+                      <h4>Интернет магазин</h4>
+                      <span class="collection"><strong>от 103.600₽</strong></span>
+                      <span class="category">Категория:<br><strong>Bitrix</strong></span>
+                      <div class="main-button">
+                        <br>
+                        <a href="#openModal" class="open_modal" data="Интернет магазин(bitrix)">Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="assets/images/bitrix-corporat.jpg" alt="">
+                    <div class="down-content">
+                      <h4>Корпоративная система</h4>
+                      <span class="collection"><strong>от 75.000₽</strong></span>
+                      <span class="category">Категория:<br><strong>Bitrix 1С</strong><br></span>
+                      <div class="main-button">
+                        <br>
+                        <a href="#openModal" class="open_modal" data="Корпоративная система(bitrix)">Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <style>
+    </style>
+  </section>
+<section id="about-us">
+  <div class="create-nft">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="section-heading">
+            <h2></h2>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="main-button">
+            <a href="#openModal" class="open_modal" data="Выберите">Заказать</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item first-item">
+            <div class="number">
+              <h6>1</h6>
+            </div>
+            <div class="icon">
+              <img src="assets/images/icon-02.png" alt="">
+            </div>
+            <h4>Фиксация технического задания</h4>
+            <p>Наш менеджер свяжется с вами для того чтобы зафиксировать техническое задание</p>
+            <br>
+            <br>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item second-item">
+            <div class="number">
+              <h6>2</h6>
+            </div>
+            <div class="icon">
+              <img src="assets/images/icon-01.png" alt="">
+            </div>
+            <h4>Передача разработчикам технического задания</h4>
+            <p>На данном этапе происходит изучение вашего технического задания и наши разработчики приступают к исполнению!</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item second-item">
+            <div class="number">
+              <h6>3</h6>
+            </div>
+            <div class="icon">
+              <img src="assets/images/icon-04.png" alt="">
+            </div>
+            <h4>Сдача проекта</h4>
+            <p>Мы тестируем, обрабатываем, загружаем на хостинг, разрабатываем документацию и передаём вам в полное пользование сайта! :)</p>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="portfolio">
+  <div class="currently-market">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading">
+            <div class="line-dec"></div>
+            <h2>Наше <em>портфолио:</em></h2>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="filters">
+            <ul>
+              <li data-filter="*"  class="active">Всё</li>
+              <li data-filter=".msc">Разработка сайта</li>
+              <li data-filter=".dig">Интеграция</li>
+              <li data-filter=".blc">Разработка мобильного приложения</li>
+              <li data-filter=".vtr">Аналитика</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="row grid">
+            <div class="col-lg-6 currently-market-item all msc">
+              <div class="item">
+                <div class="left-image">
+                  <img src="assets/images/first-order.jpg" alt="" class="orders-img" style="border-radius: 20px; min-width: 195px; max-width: 300px; height: 200px">
+                </div>
+                <div class="right-content">
+                  <h4>Разработка сайта</h4>
+                  <span class="author">
+                    <img src="assets/images/orderman.jpg" alt="" style="max-width: 50px; border-radius: 50%;">
+                    <h6>Заказчик</h6>
+                  </span>
+                  <div class="line-dec"></div>
+                  <span class="bid">
+                    Сделали быстро, чётко, качественно, красиво. Очень благодарен этим людям, так как давно искал тех, кто реализует мою идею
+                  </span>
+                  <span class="ends">
+                    <em> 24 июля, 2022г</em>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 currently-market-item all dig" >
+              <div class="item">
+                <div class="left-image">
+                  <img src="assets/images/first-order.jpg" alt="" class="orders-img" style="border-radius: 20px; min-width: 195px; max-width: 300px; height: 220px">
+                </div>
+                <div class="right-content">
+                  <h4>Интеграция</h4>
+                  <span class="author">
+                    <img src="assets/images/orderman.jpg" alt="" style="max-width: 50px; border-radius: 50%;">
+                    <h6>Заказчик</h6>
+                  </span>
+                  <div class="line-dec"></div>
+                  <span class="bid">
+                    Сделали быстро, чётко, качественно, красиво. Очень благодарен этим людям, так как давно искал тех, кто реализует мою идею и интеграцию
+                  </span>
+                  <span class="ends">
+                    <em> 24 июля, 2022г</em>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 currently-market-item all msc">
+              <div class="item">
+                <div class="left-image">
+                  <img src="assets/images/first-order.jpg" alt="" class="orders-img" style="border-radius: 20px; min-width: 195px; max-width: 300px; height: 220px">
+                </div>
+                <div class="right-content">
+                  <h4>Разработка сайта</h4>
+                  <span class="author">
+                    <img src="assets/images/orderman.jpg" alt="" style="max-width: 50px; border-radius: 50%;">
+                    <h6>Заказчик</h6>
+                  </span>
+                  <div class="line-dec"></div>
+                  <span class="bid">
+                    Сделали быстро, чётко, качественно, красиво. Очень благодарен этим людям, так как давно искал тех, кто реализует мою идею
+                  </span>
+                  <span class="ends">
+                    <em> 24 июля, 2022г</em>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 currently-market-item all blc">
+              <div class="item">
+                <div class="left-image">
+                  <img src="assets/images/first-order.jpg" alt="" class="orders-img" style="border-radius: 20px; min-width: 195px; max-width: 300px; height: 220px">
+                </div>
+                <div class="right-content">
+                  <h4>Разработка мобильного приложения</h4>
+                  <span class="author">
+                    <img src="assets/images/orderman.jpg" alt="" style="max-width: 50px; border-radius: 50%;">
+                    <h6>Заказчик</h6>
+                  </span>
+                  <div class="line-dec"></div>
+                  <span class="bid">
+                    Сделали быстро, чётко, качественно, красиво. Очень благодарен этим людям, так как давно искал тех, кто реализует мою идею мобильного приложения харамного мяса
+                  </span>
+                  <span class="ends">
+                    <em> 24 июля, 2022г</em>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 currently-market-item all vtr">
+              <div class="item">
+                <div class="left-image">
+                  <img src="assets/images/first-order.jpg" class="orders-img" alt="" style="border-radius: 20px; min-width: 195px; max-width: 300px; height: 220px">
+                </div>
+                <div class="right-content">
+                  <h4>Аналитика</h4>
+                  <span class="author">
+                    <img src="assets/images/orderman.jpg" alt="" style="max-width: 50px; border-radius: 50%;">
+                    <h6>Заказчик</h6>
+                  </span>
+                  <div class="line-dec"></div>
+                  <span class="bid">
+                    Проанализировали, что бизнесу пора закрываться. Лайк однозначно!
+                  </span>
+                  <span class="ends">
+                    <em> 24 июля, 2022г</em>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2023 <a href="#">FitLent</a><br> ООО "Фитлент". Все права зарегистрированы.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="assets/js/jquery.inputmask.js"></script>
+  <script src="assets/js/modal.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  </body>
+</html>
