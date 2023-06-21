@@ -30,11 +30,27 @@
     border: 1px solid black;
     transition: .5s;
 }
+#errors{
+    color: red;
+}
+#modal-phone:required{
+    border: 1px solid black;
+}
+#modal-phone:required:invalid{
+    border: 1px solid red;
+}
+#modal-name:required{
+    border: 1px solid black;
+}
+#modal-name:required:invalid{
+    border: 1px solid red;
+}
 .modal-input{
     display: flex;
     width: 500px;
     height: 50px;
     margin-bottom: 20px;
+
     border-radius: 16px;
     border: 1px solid #737373;
 }
@@ -48,7 +64,7 @@
     max-width: 25px;
     position: relative;
     top: -20px;
-    left: 510px;
+    left: 490px;
     border: #333333 1px solid;
     border-radius: 20px;
     cursor: pointer;
@@ -58,6 +74,7 @@
     border: 1px solid transparent;
     color: white;
     background-color: #672598;
+    transform: rotate(90deg);
     transition: .5s;
 }
 .modal-container{
@@ -79,17 +96,25 @@
     padding: 30px 50px;
     width: 600px;
     color: #151515;
-    border-radius: 5px;
-    background-color: white;
-}
-.modal-inline{
-    z-index: 102;
-    position: absolute;
-    background: linear-gradient(#4343ff, violet, blueviolet);
-    width: 640px;
-    height: 510px;
-    padding: 20px 30px;
     border-radius: 10px;
+    border: 15px solid transparent;
+    background:
+            linear-gradient(white, white),
+            linear-gradient(#4343ff, violet, blueviolet);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+#order{
+    background-color: #7453fc;
+    color: white;
+    border: 1px solid transparent;
+    transition: .3s;
+}
+#order:hover{
+    background-color: white;
+    border: 1px solid #7453fc;
+    color: #7453fc;
+    transition: .3s;
 }
 @media (max-width: 600px) {
     .modal-card{

@@ -69,6 +69,9 @@
                         <li><a href="#rates" id="rates-head">Тарифы</a></li>
                         <li><a href="#about-us" id="about-head">О нас</a></li>
                         <li><a href="#portfolio" id="portfolio-head">Портфолио</a></li>
+                        <div class="main-button">
+                        <a href="#openModal" class="open_modal"  data="Выберите услугу..." style="padding: 6px 15px">Заказать</a>
+                        </div>
                     </ul>
                     <!-- ***** Menu End ***** -->
                 </nav>
@@ -96,7 +99,6 @@
               <div class="main-button">
                 <a href="#portfolio">Наше портфолио</a>
               </div>
-
           </div>
         </div>
       </div>
@@ -104,19 +106,19 @@
   </div>
   <!-- Modal -->
   <div class="modal-container">
-    <div class="modal-inline">
-    </div>
-    <div class="modal-card">
+<!--    <div class="modal-inline" id="modal-inline">-->
+<!--    </div>-->
+    <div class="modal-card" id="modal-card">
       <div class="modal-close">✖</div>
       <p style="color: black">Закажите сайт только у нас и получите поддержку на полгода бесплатно</p>
       <h4 style="color: black">Введите ваши контактные данные:</h4>
       <br>
-      <form action="mail.php" method="post">
+      <form id="modal-form">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
-        <input type="text" id="modal-name" class="modal-input" name="name" placeholder="Ваше имя" minlength="3">
-        <input type="tel" id="modal-phone" class="modal-input" name="phone" placeholder="Номер телефона" data-mask="+7(999)999-99-99">
-        <select style="padding: 15px" class="modal-select" name="rates">
+        <input type="text" id="modal-name" class="modal-input" name="name" placeholder="Ваше ФИО" minlength="3" required>
+        <input type="tel" id="modal-phone" class="modal-input" name="phone" placeholder="Номер телефона" data-mask="+7(999)999-99-99" required>
+        <select style="padding: 15px" class="modal-select" name="rates" id="modal-select">
           <option value="" id="dynamic-select"></option>
           <option value="bitrix-shop">Интернет магазин(Битрикс)</option>
           <option value="bitrix-crm">Корпоративная система(Битрикс)</option>
@@ -124,12 +126,13 @@
           <option value="shop">Интернет магазин</option>
           <option value="landing">Лендинг</option>
           <option value="business-card">Визитка</option>
+          <option value="other">Другое</option>
         </select>
         <br>
         <br>
-        <button class="modal-send">отправить</button>
+        <div id="errors"></div>
+        <button class="modal-send" id="modal-submit" type="button">отправить</button>
       </form>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script>
 
 
@@ -255,7 +258,7 @@
               <img src="assets/images/icon-02.png" alt="">
             </div>
             <h4>Фиксация технического задания</h4>
-            <p>Наш менеджер свяжется с вами для того чтобы зафиксировать техническое задание</p>
+            <p>Наш менеджер свяжется с вами, для того чтобы зафиксировать техническое задание</p>
             <br>
             <br>
           </div>
@@ -281,7 +284,7 @@
               <img src="assets/images/icon-04.png" alt="">
             </div>
             <h4>Сдача проекта</h4>
-            <p>Мы тестируем, обрабатываем, загружаем на хостинг, разрабатываем документацию и передаём вам в полное пользование сайта! :)</p>
+            <p>Мы тестируем, обрабатываем, загружаем на хостинг, разрабатываем документацию и передаём вам в полное пользование сайт! :)</p>
             <br>
           </div>
         </div>
@@ -310,110 +313,70 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-12">
+        <div class="col-lg-12 item-portfolio">
           <div class="row grid">
             <div class="col-lg-6 currently-market-item all msc">
-              <div class="item">
-                <div class="left-image">
-                  <img src="assets/images/first-order.jpg" alt="" class="orders-img" style="border-radius: 20px; min-width: 195px; max-width: 300px; height: 200px">
-                </div>
-                <div class="right-content">
-                  <h4>Разработка сайта</h4>
-                  <span class="author">
-                    <img src="assets/images/orderman.jpg" alt="" style="max-width: 50px; border-radius: 50%;">
-                    <h6>Заказчик</h6>
-                  </span>
-                  <div class="line-dec"></div>
-                  <span class="bid">
-                    Сделали быстро, чётко, качественно, красиво. Очень благодарен этим людям, так как давно искал тех, кто реализует мою идею
-                  </span>
-                  <span class="ends">
-                    <em> 24 июля, 2022г</em>
-                  </span>
+              <h4>Разработка корпоративной системы</h4>
+              <div class="item img-portfolio" id="atelier">
+                <h5 class="unblock-portfolio">Реализация CRM системы под ателье. Из ведущих способностей CRM: отрисовка эскиза, передача заявок поставщикам, моментальная отправка в цех</h5>
+                <div class="unblock-content">
+                  <h4 class="unblock-body">PHP</h4>
+                  <h4 class="unblock-body">JS</h4>
+                  <h4 class="unblock-body">Laravel</h4>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 currently-market-item all dig" >
-              <div class="item">
-                <div class="left-image">
-                  <img src="assets/images/first-order.jpg" alt="" class="orders-img" style="border-radius: 20px; min-width: 195px; max-width: 300px; height: 220px">
-                </div>
-                <div class="right-content">
-                  <h4>Интеграция</h4>
-                  <span class="author">
-                    <img src="assets/images/orderman.jpg" alt="" style="max-width: 50px; border-radius: 50%;">
-                    <h6>Заказчик</h6>
-                  </span>
-                  <div class="line-dec"></div>
-                  <span class="bid">
-                    Сделали быстро, чётко, качественно, красиво. Очень благодарен этим людям, так как давно искал тех, кто реализует мою идею и интеграцию
-                  </span>
-                  <span class="ends">
-                    <em> 24 июля, 2022г</em>
-                  </span>
+            <div class="col-lg-6 currently-market-item all msc" >
+              <h4>Разработка корпоративной системы</h4>
+              <div class="item img-portfolio" id="factory">
+                <h5 class="unblock-portfolio">Реализация CRM системы под металлургический завод. Из ведущих способностей CRM: моментальная отправка в цех(документов, файлов, чертежей), улучшенная система контроля, учёт с помощью 1С</h5>
+                <div class="unblock-content">
+                  <h4 class="unblock-body factory-body">PHP</h4>
+                  <h4 class="unblock-body factory-body">1С</h4>
+                  <h4 class="unblock-body factory-body">JS</h4>
+                  <h4 class="unblock-body factory-body">Laravel</h4>
                 </div>
               </div>
             </div>
             <div class="col-lg-6 currently-market-item all msc">
-              <div class="item">
-                <div class="left-image">
-                  <img src="assets/images/first-order.jpg" alt="" class="orders-img" style="border-radius: 20px; min-width: 195px; max-width: 300px; height: 220px">
-                </div>
-                <div class="right-content">
-                  <h4>Разработка сайта</h4>
-                  <span class="author">
-                    <img src="assets/images/orderman.jpg" alt="" style="max-width: 50px; border-radius: 50%;">
-                    <h6>Заказчик</h6>
-                  </span>
-                  <div class="line-dec"></div>
-                  <span class="bid">
-                    Сделали быстро, чётко, качественно, красиво. Очень благодарен этим людям, так как давно искал тех, кто реализует мою идею
-                  </span>
-                  <span class="ends">
-                    <em> 24 июля, 2022г</em>
-                  </span>
+              <h4>Разработка корпоративной системы</h4>
+              <div class="item img-portfolio" id="samolet">
+                <h5 class="unblock-portfolio">Реализация CRM системы под строительный комплекс. Из ведущих способностей CRM: Модель которая по видео определяет степень готовности квартиры черновой/чистовой отделки</h5>
+                <div class="unblock-content">
+                  <h4 class="unblock-body">PHP</h4>
+                  <h4 class="unblock-body">JS</h4>
+                  <h4 class="unblock-body">Laravel</h4>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 currently-market-item all blc">
-              <div class="item">
-                <div class="left-image">
-                  <img src="assets/images/first-order.jpg" alt="" class="orders-img" style="border-radius: 20px; min-width: 195px; max-width: 300px; height: 220px">
-                </div>
-                <div class="right-content">
-                  <h4>Разработка мобильного приложения</h4>
-                  <span class="author">
-                    <img src="assets/images/orderman.jpg" alt="" style="max-width: 50px; border-radius: 50%;">
-                    <h6>Заказчик</h6>
-                  </span>
-                  <div class="line-dec"></div>
-                  <span class="bid">
-                    Сделали быстро, чётко, качественно, красиво. Очень благодарен этим людям, так как давно искал тех, кто реализует мою идею мобильного приложения харамного мяса
-                  </span>
-                  <span class="ends">
-                    <em> 24 июля, 2022г</em>
-                  </span>
+            <div class="col-lg-6 currently-market-item all msc">
+              <h4>Разработка сайта</h4>
+              <div class="item img-portfolio" id="travel-visit">
+                <h5 class="unblock-portfolio">Сайт визитка для компании агентства путешествий</h5>
+                <div class="unblock-content">
+                  <h4 class="unblock-body">PHP</h4>
+                  <h4 class="unblock-body">JS</h4>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 currently-market-item all vtr">
-              <div class="item">
-                <div class="left-image">
-                  <img src="assets/images/first-order.jpg" class="orders-img" alt="" style="border-radius: 20px; min-width: 195px; max-width: 300px; height: 220px">
+            <div class="col-lg-6 currently-market-item all msc" >
+              <h4>Разработка сайта</h4>
+              <div class="item img-portfolio" id="restaurant-visit">
+
+                <h5 class="unblock-portfolio">Сайт визитка для ресторана</h5>
+                <div class="unblock-content">
+                  <h4 class="unblock-body">PHP</h4>
+                  <h4 class="unblock-body">JS</h4>
                 </div>
-                <div class="right-content">
-                  <h4>Аналитика</h4>
-                  <span class="author">
-                    <img src="assets/images/orderman.jpg" alt="" style="max-width: 50px; border-radius: 50%;">
-                    <h6>Заказчик</h6>
-                  </span>
-                  <div class="line-dec"></div>
-                  <span class="bid">
-                    Проанализировали, что бизнесу пора закрываться. Лайк однозначно!
-                  </span>
-                  <span class="ends">
-                    <em> 24 июля, 2022г</em>
-                  </span>
+              </div>
+            </div>
+            <div class="col-lg-6 currently-market-item all msc" >
+              <h4>Разработка сайта</h4>
+              <div class="item img-portfolio" id="ritual-visit">
+                <h5 class="unblock-portfolio">Сайт визитка для компании ритуальных услуг</h5>
+                <div class="unblock-content">
+                  <h4 class="unblock-body">PHP</h4>
+                  <h4 class="unblock-body">JS</h4>
                 </div>
               </div>
             </div>
@@ -427,7 +390,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <p>Copyright © 2023 <a href="#">FitLent</a><br> ООО "Фитлент". Все права зарегистрированы.</p>
+          <p>Copyright © 2023 <a href="#">FitLent</a><br> ООО "Фитлент". Все права защищены.</p>
         </div>
       </div>
     </div>

@@ -181,25 +181,123 @@ body {
   overflow: hidden;
 }
 
-.main-button a:after {
-  width: 78%;
-  height: 2px;
-  background-color: #fff;
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
+/*.main-button a:after {*/
+/*  width: 78%;*/
+/*  height: 2px;*/
+/*  background-color: #fff;*/
+/*  content: '';*/
+/*  position: absolute;*/
+/*  left: 50%;*/
+/*  bottom: 0;*/
+/*  transform: translateX(-50%);*/
+/*}*/
+.img-portfolio{
+  overflow: hidden;
+
+  width: auto;
+  height: 380px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .6s ease;
+}
+#atelier{
+  background-image: url('../images/atelie-crm.png')
+}
+#factory{
+  background-image: url("../images/factory-crm.png");
+}
+#samolet {
+  background-image: url("../images/samolet-crm.png");
+}
+#travel-visit{
+  background-image: url("../images/travel-visit.png");
+}
+#restaurant-visit{
+  background-image: url("../images/restaurant-visit.png");
+}
+#ritual-visit{
+  background-image: url("../images/ritual-visit.png");
+}
+.img-portfolio:hover .block-portfolio {
+  margin-left: -400px;
+  transition: .6s;
+}
+.block-portfolio{
+  transition: .6s;
+}
+.unblock-portfolio{
+  position: relative;
+  top: 200px;
+  margin-left: -2000px;
+  transition: .6s;
+}
+.unblock-content{
+  position: relative;
+  display: inline-block;
+  white-space: normal;
+  transition: .6s;
+  height: 100px;
+}
+.unblock-body{
+
+  position: relative;
+  width: 500px;
+  margin-left: 2000px;
+  transition: .6s;
+}
+.factory-body{
+  top: -70px
+}
+.img-portfolio:hover .unblock-body {
+  margin-left: 0;
+  transition: .6s;
+}
+.img-portfolio:hover .unblock-portfolio {
+  margin-left: 0;
+  transition: .6s;
+}
+
+.img-portfolio:hover#atelier:hover{
+  background-image: url("../images/banner-bg500px.jpg");
+  transition: all .6s ease;
+}
+.img-portfolio:hover#factory:hover{
+  background-image: url("../images/banner-bg500px.jpg");
+  transition: all .6s ease;
+}
+.img-portfolio:hover#samolet:hover{
+  background-image: url("../images/banner-bg500px.jpg");
+  transition: all .6s ease;
+}
+.img-portfolio:hover#travel-visit:hover{
+  background-image: url("../images/banner-bg500px.jpg");
+  transition: all .6s ease;
+}
+.img-portfolio:hover#restaurant-visit:hover{
+  background-image: url("../images/banner-bg500px.jpg");
+  transition: all .6s ease;
+}
+.img-portfolio:hover#ritual-visit:hover{
+  background-image: url("../images/banner-bg500px.jpg");
+  transition: all .6s ease;
+}
+@media (max-width: 400px){
+  .unblock-content{
+    font-size: 8px;
+  }
+
 }
 
 .main-button a:hover {
   background-color: #fff;
   color: #7453fc;
-  border: 1px solid #fff;
+  border: 1px solid #7453fc;
 }
 
 section {
-  margin-top: 120px;
+  margin-top: 60px;
 }
 
 .section-heading {
@@ -1134,7 +1232,7 @@ Currently Market Style
   border: 1px solid #404245;
   border-radius: 20px;
   padding: 30px;
-  display: flex;
+  /*display: flex;*/
   margin-bottom: 30px;
 }
 
@@ -2113,12 +2211,34 @@ body {
   }
 }
 @media (max-width: 600px){
+  .unblock-content{
+    display: flex;
+    font-size: 10px;
+    top: 0;
+  }
+  .unblock-portfolio{
+    top: 120px;
+    font-size: 12px;
+  }
   .main-banner{
     background-image: url("../images/banner-bg500px.jpg");
+    font-size: 14px;
+
+  }
+  body{
+    overflow-y: scroll;
+  }
+  .buttons{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  h2{
+    font-size: 14px;
   }
   .currently-market .item{
     display: block;
     margin-top: 30px;
+    height: 280px;
   }
   .currently-market .item .right-content{
     width: auto;

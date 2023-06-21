@@ -24,14 +24,20 @@ window.onload = () => {
                 document.addEventListener('click', (event) => {
                     const withinBoundaries = event.composedPath().includes(blur_modal);
                     if(!withinBoundaries && event.composedPath()[0].className !== 'open_modal') {
-                        document.querySelector('#modal-phone').value = document.querySelector('#modal-phone').defaultValue
+                        errors.textContent = ' '
+                        modal_submit.textContent = 'Отправить'
+                        modal_phone.value = document.querySelector('#modal-phone').defaultValue
+                        modal_name.value = document.querySelector('#modal-name').defaultValue
                         modal.style.display = 'none'
                         document.querySelector('body').style.overflow = 'auto'
                     }
                 })
                 document.onkeydown = (ev) => {
                     if(ev.key == "Escape"){
-                        document.querySelector('#modal-phone').value = document.querySelector('#modal-phone').defaultValue
+                        errors.textContent = ''
+                        modal_submit.textContent = 'Отправить'
+                        modal_phone.value = document.querySelector('#modal-phone').defaultValue
+                        modal_name.value = document.querySelector('#modal-name').defaultValue
                         modal.style.display = 'none'
                         document.querySelector('body').style.overflow = 'auto'
                     }
@@ -45,7 +51,10 @@ window.onload = () => {
 
 
     modal_close.addEventListener('click', () => {
-        document.querySelector('#modal-phone').value = document.querySelector('#modal-phone').defaultValue
+        errors.textContent = ''
+        modal_submit.textContent = 'Отправить'
+        modal_phone.value = modal_phone.defaultValue
+        modal_name.value = modal_name.defaultValue
         modal.style.display = 'none';
         document.querySelector('body').style.overflow = 'auto'
     })
@@ -79,4 +88,73 @@ window.onload = () => {
         }
     };
 
+}
+const modal_container = document.querySelector('.modal-container')
+const modal_phone = document.getElementById('modal-phone')
+const modal_name = document.getElementById('modal-name')
+const modal_select = document.getElementById('modal-select')
+const modal_form = document.getElementById('modal-form')
+const modal_submit = document.getElementById('modal-submit')
+const errors = document.querySelector('#errors')
+modal_submit.onclick = function (){
+    var formID = $(this).attr('id');
+    var formNm = $('#' + formID);
+    if(modal_name.value == ''){
+        errors.textContent = 'Введите ФИО'
+    }else if(modal_phone.value == '') {
+        errors.textContent = 'Введите номер телефона'
+    }else{
+        $.ajax({
+            url: '/mail.php',
+            method: 'post',
+            dataType: 'json',
+            data: {name: modal_name.textContent, phone: modal_phone.textContent, rates: modal_select.value},
+            success: function success(data) {
+                errors.textContent = 'Успешно'
+                errors.style.color = 'green'
+                setTimeout(function () {
+                   errors.textContent = ''
+                    modal_phone.value = modal_phone.defaultValue
+                    modal_name.value = modal_name.defaultValue
+                    modal_submit.textContent = 'отправить'
+                    modal_container.style.display = 'none'
+                    document.querySelector('body').style.overflow = 'auto'
+                    modal_submit.style.color = 'black'
+                    modal_submit.style.backgroundColor = '#adb5bd'
+                }, 1200)
+            },
+            error: function (jqXHR, exception) {
+                if (jqXHR.status === 0) {
+                    console.error('Not connect. Verify Network.');
+                    errors.textContent = 'Ошибка'
+                    errors.style.color = 'red'
+                } else if (jqXHR.status == 404) {
+                    console.error('Requested page not found (404).');
+                    errors.textContent = 'Ошибка'
+                    errors.style.color = 'red'
+                } else if (jqXHR.status == 500) {
+                    console.error('Internal Server Error (500).');
+                    errors.textContent = 'Ошибка'
+                    errors.style.color = 'red'
+                } else if (exception === 'parsererror') {
+                    console.error('Requested JSON parse failed.');
+                    $(formNm).html("Ошибка");
+                    errors.textContent = 'Ошибка'
+                    errors.style.color = 'red'
+                } else if (exception === 'timeout') {
+                    console.error('Time out error.');
+                    $(formNm).html("Ошибка");
+                    errors.textContent = 'Ошибка'
+                    errors.style.color = 'red'
+                } else if (exception === 'abort') {
+                    console.error('Ajax request aborted.');
+                    errors.textContent = 'Ошибка'
+                    errors.style.color = 'red'
+                } else {
+                    console.log('Uncaught Error. ' + jqXHR.responseText);
+                }
+            }
+        })
+    }
+    return false;
 }

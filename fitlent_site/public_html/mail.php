@@ -3,15 +3,13 @@ $name = $_POST['name'];
 $phone = $_POST['phone'];
 $rates = $_POST['rates'];
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
-    $to      = 'leon200207@yandex.ru';
-    $subject = 'the subject';
-    $message = 'hello';
-    $headers = 'From: webmaster@example.com' . "\r\n" .
-        'Reply-To: webmaster@example.com' . "\r\n" .
-        'X-Mailer: PHP/' . phpversion();
+    $to      = 'jokeycoffe@gmail.com';
+    $subject = 'Новый заказ!';
+    $message = 'Заказ от: '.$name.' Номер телефона: '.$phone.' По тарифу: '.$rates;
 
-    mail($to, $subject, $message, $headers);
+    mail($to, $subject, $message);
 }
+echo 1;
 
 
 
