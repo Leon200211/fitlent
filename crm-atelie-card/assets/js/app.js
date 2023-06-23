@@ -58,10 +58,17 @@ $(function () {
 
     window.onscroll = () => {
         if(scrollY > 800){
-            $('.header--line-active').css({'opacity': '1'})
+            $('.header--line-active').css({'opacity': '1','display': 'flex'})
         }else{
-            $('.header--line-active').css({'opacity': '0'})
+            $('.header--line-active').css({'display': 'none','opacity': '0'})
         }
     }
 
+    $('#btn-active').click(function(){
+        console.log(123)
+        $.fancybox.open({
+            src: '#hidden',
+            type: 'inline'
+        });
+    });
 })

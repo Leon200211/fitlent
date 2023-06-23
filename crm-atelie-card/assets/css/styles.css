@@ -42,13 +42,15 @@ body{
     top: 0;
     transition: .3s;
     padding: 20px 0;
+    display: none;
     opacity: 0;
+    cursor: pointer;
 }
 .header--logo{
     font-size: 42px;
     text-decoration: none;
     color: white;
-    font-family: Roboto;
+    font-family: Concrete, sans-serif;
 }
 .header--nav{
     position: relative;
@@ -56,7 +58,7 @@ body{
     font-size: 24px;
     color: white;
     text-decoration: none;
-    font-family: Roboto;
+    font-family: avenir, sans-serif;;
     margin-right: 40px;
     padding-bottom: 0.25rem;
 }
@@ -75,7 +77,7 @@ body{
     width: 100%;
 }
 .header--btn{
-    font-family: Roboto;
+    font-family: avenir, sans-serif;;
     font-size: 24px;
     padding: 10px 24px;
     background-color: white;
@@ -112,7 +114,7 @@ ion-icon{
     justify-content: center;
     text-align: center;
     align-items: center;
-    font-family: Roboto;
+    font-family: avenir, sans-serif;;
     font-size: 36px;
     flex-direction: column;
 }
@@ -149,7 +151,7 @@ section.element-show {
     border-radius: 5px;
     margin: 20px 20px 20px 0;
     overflow: hidden;
-    font-family: Roboto;
+    font-family: avenir, sans-serif;;
 }
 .card-title{
     font-weight: 900;
@@ -165,7 +167,7 @@ section.element-show {
     flex-direction: column;
 }
 .opportunities--title{
-    font-family: Roboto;
+    font-family: avenir, sans-serif;;
     font-size: 36px;
     color: black;
 }
@@ -197,7 +199,7 @@ section.element-show {
     z-index: 2;
 }
 .accordion__item{
-    font-family: Roboto;
+    font-family: avenir, sans-serif;;
     position: relative;
     padding-bottom: 30px;
     list-style: none;
@@ -321,7 +323,7 @@ section.element-show {
 }
 .left-accordion__item{
 
-    font-family: Roboto;
+    font-family: avenir, sans-serif;;
     position: relative;
     padding-bottom: 30px;
     list-style: none;
@@ -435,7 +437,7 @@ section.element-show {
     text-align: center;
     justify-content: center;
     flex-direction: column;
-    font-family: Roboto;
+    font-family: avenir, sans-serif;;
     font-weight: 900;
     font-size: 36px;
 }
@@ -461,11 +463,11 @@ section.element-show {
 .body-title{
     font-size: 48px;
     font-weight: 900;
-    font-family: Roboto;
+    font-family: avenir, sans-serif;;
 }
 .body-main{
     font-size: 36px;
-    font-family: Roboto;
+    font-family: avenir, sans-serif;;
 }
 #item-2 .body-title, #item-2 .body-main{
     display: flex;
@@ -503,7 +505,7 @@ section.element-show {
     margin-right: 15px;
     content: '!';
     font-size: 36px;
-    font-family: Roboto;
+    font-family: avenir, sans-serif;;
     padding: 5px 22px;
     height: 10%;
     border: 1px solid black;
@@ -533,12 +535,12 @@ footer{
     display: flex;
     flex-direction: column;
     color: white;
-    font-family: Roboto;
+    font-family: avenir, sans-serif;;
 }
 .footer1-link{
     text-decoration: none;
     color: white;
-    font-family: Roboto;
+    font-family: avenir, sans-serif;;
 }
 .footer-second{
     padding-top: 40px;
@@ -550,10 +552,10 @@ footer{
     color: #ffffff;
     font-size: 24px;
     text-decoration: none;
-    font-family: Roboto;
+    font-family: avenir, sans-serif;;
 }
 .footer-span{
-    font-family: Roboto;
+    font-family: avenir, sans-serif;;
     color: white;
 }
 

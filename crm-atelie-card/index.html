@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
 </head>
 <body>
 <header class="header">
@@ -15,14 +16,14 @@
                 </a>
             </div>
             <div class="header--right">
-                <a href="/" class="header--nav">Главная</a>
-                <a href="/" class="header--nav">Возможности</a>
-                <a href="/" class="header--nav">Контакты</a>
-                <a href="/" class="header--btn">Заказать</a>
+                <a href="#" class="header--nav">Главная</a>
+                <a href="#" class="header--nav">Возможности</a>
+                <a href="#" class="header--nav">Контакты</a>
+                <a href="#" class="header--btn">Заказать</a>
             </div>
         </div>
         <div class="header--body">
-            <span class="header--title">
+            <span class="header--title" style="font-family: Concrete, sans-serif;">
                 CRM для ателье это комплексное решение и
             оптимизации работы салона, и швейных цехов
             </span>
@@ -31,6 +32,17 @@
     </div>
 
 </header>
+<div class="fancy-modal" id="hidden" style="display: none; width: 500px">
+    <h2>Контент из скрытого div</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim
+        vulputate eros.
+    </p>
+    <p>
+        Donec hendrerit efficitur ex vitae euismod. Maecenas ut leo vitae ipsum dictum
+        cursus vel vitae nulla.
+    </p>
+</div>
 <div class="header--line-active">
     <div class="header--left" style="margin-left: 50px">
         <a href="/" class="header--logo">
@@ -38,10 +50,10 @@
         </a>
     </div>
     <div class="header--right" style="margin-right: 20px; margin-top: 10px">
-        <a href="/" class="header--nav">Главная</a>
-        <a href="/" class="header--nav">Возможности</a>
-        <a href="/" class="header--nav">Контакты</a>
-        <a href="/" class="header--btn">Заказать</a>
+        <a href="#" class="header--nav">Главная</a>
+        <a href="#" class="header--nav">Возможности</a>
+        <a href="#" class="header--nav">Контакты</a>
+        <a class="header--btn" id="btn-active">Заказать</a>
     </div>
 </div>
 
@@ -294,7 +306,8 @@
         </div>
     </div>
 </footer>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 <script src="assets/js/app.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
