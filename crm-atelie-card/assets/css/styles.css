@@ -16,7 +16,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
 }
 .container{
@@ -26,6 +26,23 @@ body{
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
+    transition: all .6s ease;
+    opacity: 1;
+}
+.header--line-active{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0,0,0, 1);
+    color: #0a0a0a;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    transition: .3s;
+    padding: 20px 0;
+    opacity: 0;
 }
 .header--logo{
     font-size: 42px;
@@ -503,7 +520,7 @@ section.element-show {
     transition: .5s;
 }
 footer{
-    height: 50vh;
+    height: 30vh;
     background-color: #333333;
 }
 .footer--content{
@@ -512,7 +529,7 @@ footer{
     justify-content: space-between;
 }
 .footer-first{
-    padding-top: 100px;
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
     color: white;
@@ -524,30 +541,24 @@ footer{
     font-family: Roboto;
 }
 .footer-second{
-    padding-top: 100px;
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
 }
 .footer2-link{
-    padding-top: 50px;
-    color: #33317c;
-    font-size: 28px;
+    padding-top: 10px;
+    color: #ffffff;
+    font-size: 24px;
     text-decoration: none;
     font-family: Roboto;
 }
+.footer-span{
+    font-family: Roboto;
+    color: white;
+}
+
 .footer-third{
-    padding-top: 60px;
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
-    color: white;
-    font-size: 28px;
-    font-family: Roboto;
-}
-.footer3-link{
-    padding-top: 50px;
-    color: #33317c;
-    font-size: 28px;
-    text-decoration: none;
-    font-family: Roboto;
-
 }

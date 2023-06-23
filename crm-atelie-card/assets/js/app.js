@@ -55,4 +55,13 @@ $(function () {
         observer.observe(elm);
         console.log(elm)
     }
+
+    window.onscroll = () => {
+        if(scrollY > 800){
+            $('.header--line-active').css({'opacity': '1'})
+        }else{
+            $('.header--line-active').css({'opacity': '0'})
+        }
+    }
+
 })
