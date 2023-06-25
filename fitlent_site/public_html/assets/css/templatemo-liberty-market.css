@@ -297,7 +297,7 @@ body {
 }
 
 section {
-  margin-top: 60px;
+  /*margin-top: 60px;*/
 }
 
 .section-heading {
@@ -833,6 +833,8 @@ Banner Style
   padding-top: 290px;
   padding-bottom: 240px;
   background-color: #2a2a2a;
+
+  height: 100vh;
 }
 
 .main-banner h6 {
