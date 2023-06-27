@@ -50,7 +50,7 @@ body{
     font-size: 42px;
     text-decoration: none;
     color: white;
-    font-family: Concrete, sans-serif;
+    font-family: avenir, sans-serif;
 }
 .header--nav{
     position: relative;
@@ -115,11 +115,11 @@ ion-icon{
     text-align: center;
     align-items: center;
     font-family: avenir, sans-serif;;
-    font-size: 36px;
+    font-size: 26px;
     flex-direction: column;
 }
 .weAre--suptitle{
-    font-size: 28px;
+    font-size: 22px;
     color: #ddd
 }
 .weAre{
@@ -134,6 +134,7 @@ ion-icon{
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 1000px;
 }
 section{
     padding-top: 100px;
@@ -146,8 +147,8 @@ section.element-show {
 .weAre-card{
     display: block;
     position: relative;
-    width: 506px;
-    height: 200px;
+    width: auto;
+    max-height: 250px;
     border-radius: 5px;
     margin: 20px 20px 20px 0;
     overflow: hidden;
@@ -155,10 +156,12 @@ section.element-show {
 }
 .card-title{
     font-weight: 900;
-    font-size: 36px;
+    font-size: 24px;
 }
 .card-body{
-    font-size: 30px;
+    display: block;
+    font-size: 18px;
+    max-width:380px;
 }
 .opportunities{
     display: flex;
@@ -461,17 +464,24 @@ section.element-show {
     padding-left: 20px;
 }
 .body-title{
-    font-size: 48px;
+    max-width: 400px;
+    width: auto;
+    font-size: 28px;
     font-weight: 900;
     font-family: avenir, sans-serif;;
 }
 .body-main{
-    font-size: 36px;
+    width: auto;
+    max-width: 500px;
+    font-size: 22px;
     font-family: avenir, sans-serif;;
 }
 #item-2 .body-title, #item-2 .body-main{
-    display: flex;
     text-align: right;
+}
+.additional-img2{
+    display: flex;
+    justify-content: flex-start;
 }
 .trumps{
     display: table;
@@ -563,4 +573,27 @@ footer{
     padding-top: 40px;
     display: flex;
     flex-direction: column;
+}
+html{
+    scroll-behavior: smooth;
+}
+#down{
+    color: white;
+}
+.integrations{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.integrations--title{
+    font-family: avenir, sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 40px 0 60px 0;
+}
+.integrations--icon{
+    font-size: 48px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    margin-right: 15px;
 }

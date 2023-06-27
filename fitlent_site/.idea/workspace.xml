@@ -14,6 +14,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -27,10 +28,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/OSPanel/domains/product-vizit/stroiKontrol_site",
+    "last_opened_file_path": "C:/OSPanel/domains/fitlent/fitlent/crm-atelie-card",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -67,6 +69,8 @@
       <workItem from="1686731770879" duration="27000" />
       <workItem from="1687181013100" duration="596000" />
       <workItem from="1687245490490" duration="34000" />
+      <workItem from="1687688934909" duration="9988000" />
+      <workItem from="1687855952381" duration="1548000" />
     </task>
     <servers />
   </component>

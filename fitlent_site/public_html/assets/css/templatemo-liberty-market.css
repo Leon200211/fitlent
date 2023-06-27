@@ -296,9 +296,6 @@ body {
   border: 1px solid #7453fc;
 }
 
-section {
-  margin-top: 60px;
-}
 
 .section-heading {
   position: relative;
@@ -833,6 +830,7 @@ Banner Style
   padding-top: 290px;
   padding-bottom: 240px;
   background-color: #2a2a2a;
+  height: 100vh;
 }
 
 .main-banner h6 {

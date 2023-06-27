@@ -17,17 +17,17 @@
             </div>
             <div class="header--right">
                 <a href="#" class="header--nav">Главная</a>
-                <a href="#" class="header--nav">Возможности</a>
+                <a href="#opportunites" class="header--nav">Возможности</a>
                 <a href="#" class="header--nav">Контакты</a>
                 <a href="#" class="header--btn">Заказать</a>
             </div>
         </div>
         <div class="header--body">
-            <span class="header--title" style="font-family: Concrete, sans-serif;">
+            <span class="header--title" style="font-family: avenir, sans-serif;">
                 CRM для ателье это комплексное решение и
             оптимизации работы салона, и швейных цехов
             </span>
-            <ion-icon name="chevron-down-circle-outline" size="large"></ion-icon>
+            <a href="#weAre"><ion-icon name="chevron-down-circle-outline" size="large" id="down"></ion-icon></a>
         </div>
     </div>
 
@@ -51,13 +51,13 @@
     </div>
     <div class="header--right" style="margin-right: 20px; margin-top: 10px">
         <a href="#" class="header--nav">Главная</a>
-        <a href="#" class="header--nav">Возможности</a>
+        <a href="#opportunites" class="header--nav">Возможности</a>
         <a href="#" class="header--nav">Контакты</a>
         <a class="header--btn" id="btn-active">Заказать</a>
     </div>
 </div>
 
-<section class="weAre">
+<section class="weAre" id="weAre">
     <div class="container">
         <div class="weAre--title">Ателье CRM - это...
         <span class="weAre--suptitle">...это что-то прекрасное</span>
@@ -90,7 +90,7 @@
         </div>
     </div>
 </section>
-<section class="opportunities">
+<section class="opportunities" id="opportunites">
     <div class="container">
         <div class="opportunities--title">Наши возможности</div>
         <div class="opportunities--suptitle">suptitle</div>
@@ -226,7 +226,7 @@
             </div>
             <div class="additional-item" id="item-2">
 
-                <div class="item-body">
+                <div class="item-body" id="item-body2">
                     <span class="body-title">
                         Предотвращайте кассовый разрыв
                     </span>
@@ -234,7 +234,7 @@
                         Бывают ситуации когда заказчик принял заказ, но не произвёл оплату, мы поможем предотвратить это
                     </span>
                 </div>
-                <img src="assets/imgs/image%202.jpg" alt="" style="width: 600px; height: 350px;">
+                <img src="assets/imgs/image%202.jpg" alt="" style="width: 600px; height: 350px;" class="additional-img2">
             </div>
             <div class="additional-item" id="item-3">
                 <img src="assets/imgs/image%203.jpg" alt="" style="width: 600px; height: 350px;">
@@ -247,6 +247,20 @@
                     </span>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+<section class="integrations">
+    <div class="container">
+        <div class="integrations--title">
+            <span>Делаем интеграции</span>
+        </div>
+        <div class="integrations--body">
+            <ion-icon name="logo-reddit" class="integrations--icon"></ion-icon>
+            <ion-icon name="logo-github" class="integrations--icon"></ion-icon>
+            <ion-icon name="logo-playstation" class="integrations--icon"></ion-icon>
+            <ion-icon name="logo-pinterest" class="integrations--icon"></ion-icon>
+            <ion-icon name="logo-vk" class="integrations--icon"></ion-icon>
         </div>
     </div>
 </section>
