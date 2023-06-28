@@ -25,16 +25,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Mat_test_1/public_html" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/OSPanel/domains/fitlent/fitlent/crm-atelie-card",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\fitlent\fitlent\fitlent_site\public_html\assets\images" />
       <recent name="C:\OSPanel\domains\vizitka\business-card\public_html\assets\js" />
       <recent name="C:\OSPanel\domains\vizitka\business-card\public_html" />
     </key>
@@ -66,6 +66,11 @@
       <workItem from="1687181013100" duration="596000" />
       <workItem from="1687245490490" duration="34000" />
       <workItem from="1687688908852" duration="4321000" />
+      <workItem from="1687887509991" duration="80000" />
+      <workItem from="1687887592183" duration="44000" />
+      <workItem from="1687887637949" duration="596000" />
+      <workItem from="1687889341504" duration="614000" />
+      <workItem from="1687944607036" duration="11357000" />
     </task>
     <servers />
   </component>

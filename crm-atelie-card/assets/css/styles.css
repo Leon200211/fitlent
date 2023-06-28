@@ -11,11 +11,12 @@ body{
     padding: 0;
 }
 .header{
-    background-image: linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    background-image: linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
             url("../imgs/header-bg.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
     height: 100vh;
     width: 100%;
 }
@@ -99,7 +100,7 @@ body{
     display: flex;
     text-align: center;
     justify-content: center;
-    margin-top: 500px;
+    margin-top: 600px;
     color: white;
 }
 .header--title{
@@ -115,11 +116,11 @@ ion-icon{
     text-align: center;
     align-items: center;
     font-family: avenir, sans-serif;;
-    font-size: 26px;
+    font-size: 32px;
     flex-direction: column;
 }
 .weAre--suptitle{
-    font-size: 22px;
+    font-size: 26px;
     color: #ddd
 }
 .weAre{
@@ -134,7 +135,7 @@ ion-icon{
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1400px;
 }
 section{
     padding-top: 100px;
@@ -145,23 +146,22 @@ section.element-show {
     transition: opacity 1.5s;
 }
 .weAre-card{
-    display: block;
-    position: relative;
     width: auto;
-    max-height: 250px;
+    max-width: 600px;
+    max-height: 320px;
     border-radius: 5px;
-    margin: 20px 20px 20px 0;
+    margin: 20px 80px 50px 80px;
     overflow: hidden;
     font-family: avenir, sans-serif;;
 }
 .card-title{
     font-weight: 900;
-    font-size: 24px;
+    font-size: 32px;
 }
 .card-body{
     display: block;
-    font-size: 18px;
-    max-width:380px;
+    font-size: 24px;
+    max-width:490px;
 }
 .opportunities{
     display: flex;
@@ -457,15 +457,17 @@ section.element-show {
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
+    width: 100%;
 }
 .item-body{
     display: flex;
     flex-direction: column;
     padding-left: 20px;
+    width: 100%;
 }
 .body-title{
-    max-width: 400px;
-    width: auto;
+    max-width: 800px;
+    width: 100%;
     font-size: 28px;
     font-weight: 900;
     font-family: avenir, sans-serif;;
@@ -475,9 +477,6 @@ section.element-show {
     max-width: 500px;
     font-size: 22px;
     font-family: avenir, sans-serif;;
-}
-#item-2 .body-title, #item-2 .body-main{
-    text-align: right;
 }
 .additional-img2{
     display: flex;
@@ -522,14 +521,16 @@ section.element-show {
     border-radius: 35px;
 }
 .fixed-content{
+    font-family: avenir, sans-serif;
     display: flex;
     justify-content: center;
     text-align: center;
     flex-direction: column;
     padding: 20px 15px;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     border-radius: 30px;
     transition: .5s;
+    font-weight: 600;
 }
 footer{
     height: 30vh;
@@ -579,6 +580,7 @@ html{
 }
 #down{
     color: white;
+    font-size: 52px;
 }
 .integrations{
     display: flex;

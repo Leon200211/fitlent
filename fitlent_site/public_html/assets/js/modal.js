@@ -3,6 +3,9 @@
 
 
 window.onload = () => {
+    let modal_phone = document.getElementById('modal-phone')
+    let modal_name = document.getElementById('modal-name')
+    let errors = document.querySelector('#errors')
 
     const blur_modal = document.querySelector('.modal-card')
     const modal_open = document.querySelectorAll('.main-button')
@@ -13,6 +16,7 @@ window.onload = () => {
     const header_main = document.querySelector('#main-head')
     const header_portfolio = document.querySelector('#portfolio-head')
     const header_about = document.querySelector('#about-head')
+    const header_works = document.querySelector('#products')
     for (let i = 0; i < modal_open.length; i++) {
         modal_open[i].addEventListener('click', (e) => {
             modal.style.display = 'flex';
@@ -65,38 +69,50 @@ window.onload = () => {
         let scrollPos = window.scrollY;
         // console.log(scrollPos)
 
-        if (scrollPos == 0 && scrollPos < 900) {
+        if (scrollPos == 0 && scrollPos < 960) {
             header_about.classList.remove('active');
             header_portfolio.classList.remove('active');
             header_rates.classList.remove('active')
+            header_works.classList.remove('active')
             header_main.className = 'active'
-        } else if (scrollPos > 900 && scrollPos < 1800) {
+        } else if (scrollPos > 860 && scrollPos < 1610) {
             header_main.classList.remove('active');
             header_about.classList.remove('active');
             header_portfolio.classList.remove('active');
+            header_works.classList.remove('active')
             header_rates.className = 'active'
-        } else if (scrollPos > 1800 && scrollPos < 2500) {
+        } else if (scrollPos > 1610 && scrollPos < 2060) {
             header_rates.classList.remove('active');
             header_main.classList.remove('active');
             header_portfolio.classList.remove('active');
+            header_works.classList.remove('active')
             header_about.className = 'active'
-        } else if (scrollPos > 2500) {
+        } else if (scrollPos > 2060 && scrollPos < 2760) {
             header_about.classList.remove('active')
             header_rates.classList.remove('active')
             header_main.classList.remove('active')
+            header_portfolio.classList.remove('active')
+            header_works.className = 'active'
+        }
+        else if (scrollPos > 2760) {
+            header_about.classList.remove('active')
+            header_rates.classList.remove('active')
+            header_main.classList.remove('active')
+            header_works.classList.remove('active')
             header_portfolio.className = 'active'
         }
     };
 
 }
 const modal_container = document.querySelector('.modal-container')
-const modal_phone = document.getElementById('modal-phone')
-const modal_name = document.getElementById('modal-name')
 const modal_select = document.getElementById('modal-select')
-const modal_form = document.getElementById('modal-form')
+let modal_form = document.getElementById('modal-form')
 const modal_submit = document.getElementById('modal-submit')
-const errors = document.querySelector('#errors')
-modal_submit.onclick = function (){
+let modal_phone = document.getElementById('modal-phone')
+let modal_name = document.getElementById('modal-name')
+let errors = document.querySelector('#errors')
+let card = document.querySelector('.modal-card')
+function sendForm(){
     var formID = $(this).attr('id');
     var formNm = $('#' + formID);
     if(modal_name.value == ''){
@@ -110,17 +126,12 @@ modal_submit.onclick = function (){
             dataType: 'json',
             data: {name: modal_name.textContent, phone: modal_phone.textContent, rates: modal_select.value},
             success: function success(data) {
-                errors.textContent = 'Успешно'
-                errors.style.color = 'green'
+                const form_clone = $('#modal_form').clone()
+                modal_form.textContent = 'Ваша заявка успешно отправлена'
                 setTimeout(function () {
-                   errors.textContent = ''
-                    modal_phone.value = modal_phone.defaultValue
-                    modal_name.value = modal_name.defaultValue
-                    modal_submit.textContent = 'отправить'
                     modal_container.style.display = 'none'
+                    card.append(form_clone)
                     document.querySelector('body').style.overflow = 'auto'
-                    modal_submit.style.color = 'black'
-                    modal_submit.style.backgroundColor = '#adb5bd'
                 }, 1200)
             },
             error: function (jqXHR, exception) {

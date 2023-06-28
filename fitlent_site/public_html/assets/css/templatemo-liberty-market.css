@@ -1,36 +1,5 @@
-/*
 
-TemplateMo 577 Liberty Market
-
-https://templatemo.com/tm-577-liberty-market
-
-*/
-
-/* ---------------------------------------------
-Table of contents
-------------------------------------------------
-01. font & reset css
-02. reset
-03. global styles
-04. header
-05. banner
-06. features
-07. testimonials
-08. contact
-09. footer
-
---------------------------------------------- */
-/* 
----------------------------------------------
-font & reset css
---------------------------------------------- 
-*/
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900");
-/* 
----------------------------------------------
-reset
---------------------------------------------- 
-*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
 pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
 s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
@@ -40,7 +9,9 @@ figure, header, nav, section, article, aside, footer, figcaption {
   border: 0;
   outline: 0;
 }
-
+.row{
+  justify-content: flex-end;
+}
 .clearfix:after {
   content: ".";
   display: block;
@@ -112,11 +83,6 @@ img {
   overflow: hidden;
 }
 
-/* 
----------------------------------------------
-Global Styles
---------------------------------------------- 
-*/
 html,
 body {
   background: #fff;
@@ -132,13 +98,17 @@ body {
   background: #7453fc;
   color: #fff;
 }
+.buttons{
+  display: flex;
+  justify-content: flex-end;
+}
 
 .border-button a {
-  font-size: 14px;
+  font-size: 20px;
   color: #fff;
   background-color: transparent;
   border: 1px solid #7453fc;
-  padding: 12px 30px;
+  padding: 12px 40px;
   display: inline-block;
   border-radius: 25px;
   font-weight: 500;
@@ -147,6 +117,7 @@ body {
   transition: all .3s;
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .border-button a:after {
@@ -179,6 +150,16 @@ body {
   transition: all .3s;
   position: relative;
   overflow: hidden;
+}
+.portfolio-btn{
+  font-size: 20px !important;
+  width: 100%;
+}
+.contacts{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 250px;
 }
 
 /*.main-button a:after {*/
@@ -289,16 +270,124 @@ body {
   }
 
 }
+.ourWorks{
+  background-image:
+          linear-gradient(to top, rgba(77, 52, 128, 0.9), rgba(0,0,0,0.8)),
+          url("../images/space-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0 100px 0;
+}
+.ourWorks--title{
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 50px;
+  color: white;
+}
+.ourWorks--title em{
+  color: #7453fc;
+  font-style: unset;
+}
+.ourWorks--title .line-dec{
+  width: 100px;
+  height: 2px;
+  background-color: #7453fc;
+  margin: 20px auto 30px auto;
+}
+.ourWorks--cards{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.ourWorks--card{
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  flex-direction: column;
+  background-color: #F3F4F9;
+  max-width: 300px;
+  padding: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 15px;
+  overflow: hidden;
+  width: auto;
+  word-break: break-all;
+  transition: .5s;
+}
+.ourWorks--card .card-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.card-btn a{
+  color: white;
+  border: 1px solid #7453fc;
+  padding: 10px;
+  background-color: #7453fc;
+  border-radius: 15px;
+  transition: .5s;
+}
+.card--btn:hover{
+  border: 1px solid transparent;
+  background-color: white;
+  color: #696969;
+  transition: .5s;
+}
+.ourWorks-card-title{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  width: auto;
+  transition: .5s;
+}
+.ourWorks-card-body{
+  font-size: 18px;
+  max-width: 230px;
+  margin-bottom: 45px;
+  width: auto;
+  color: #9CA5B0;
+  transition: .5s;
+}
+.card--img{
+  position: relative;
+  padding: 40px;
+  background-color: #d5d5dc;
+  max-width: 90px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  transition: .5s;
+}
+.ourWorks--img{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
 
+}
+.ourWorks--card:hover{
+  transition: .5s;
+  background-color: #31314D;
+}
+.ourWorks--card:hover .ourWorks-card-title{
+  color: #1C4ADE;
+}
+.ourWorks--card:hover .ourWorks-card-body{
+  color: #dadada;
+}
+.ourWorks--card:hover .card--img{
+  background-color: #CCD3E5;
+}
 .main-button a:hover {
   background-color: #fff;
   color: #7453fc;
   border: 1px solid #7453fc;
 }
 
-section {
-  /*margin-top: 60px;*/
-}
 
 .section-heading {
   position: relative;
@@ -439,7 +528,7 @@ Header Style
 
 .background-header {
   background-color: #fff !important;
-  height: 70px!important;
+  height: 90px!important;
   position: fixed!important;
   top: 0!important;
   left: 0;
@@ -470,13 +559,19 @@ Header Style
   background: transparent;
   display: flex;
   background-color: #fff;
-  padding: 15px 30px;
+  padding: 15px 15px;
   border-radius: 50px;
 }
 
 .background-header .main-nav {
   padding: 0px;
   background-color: transparent;
+}
+.contact-number{
+  color: black;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 5px;
 }
 
 .header-area .main-nav .logo {
@@ -826,14 +921,15 @@ Banner Style
 */
 
 .main-banner {
-  background-image: url(../images/banner-bg.jpg);
+  background-image:
+          linear-gradient(to top, rgba(0,0,0, 0.3), rgba(0,0,0, 0.3)),
+          url(../images/banner-bg.jpg);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: right;
   background-size: cover;
   padding-top: 290px;
   padding-bottom: 240px;
   background-color: #2a2a2a;
-
   height: 100vh;
 }
 
@@ -858,8 +954,6 @@ Banner Style
 
 .main-banner .buttons {
   margin-top: 30px;
-  display: flex;
-  justify-content: start;
 }
 
 .main-banner .border-button {
@@ -917,7 +1011,7 @@ Categories & Collections Style
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 120px 0px 150px 0px;
+  padding: 0 0px 50px 0px;
   position: relative;
 }
 
@@ -1105,7 +1199,11 @@ Create NFT Style
 }
 
 .create-nft .main-button {
-  text-align: right;
+  margin-top: 40px;
+  text-align: center;
+}
+#about-btn{
+  font-size: 20px !important;
 }
 
 .create-nft .item {

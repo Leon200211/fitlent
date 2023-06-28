@@ -248,8 +248,28 @@
         });
     }
 
+let header_nav = document.querySelectorAll('.header--nav')
 
-	
-
+	// function onEntry(entry) {
+	// 	entry.forEach(change => {
+	// 		if (change.isIntersecting) {
+	// 			header_nav.classList.add('active');
+	// 		} else{
+	// 			header_nav.classList.removeClass('active')
+	// 		}
+	// 	});
+	// }
+	//
+	// let options = {
+	// 	threshold: [0.5] };
+	// let observer = new IntersectionObserver(onEntry, options);
+	// let elements = document.querySelectorAll('section');
+	//
+	// for (let elm of elements) {
+	//
+	// 	observer.observe(elm);
+	// 	console.log(elm)
+	// }
 
 })(window.jQuery);
+
