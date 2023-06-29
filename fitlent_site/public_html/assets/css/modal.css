@@ -25,6 +25,10 @@
     transition: .5s;
     color: white;
 }
+#errors{
+    position: absolute;
+    display: none;
+}
 .modal-send:hover{
     border: 1px solid black;
     transition: .5s;

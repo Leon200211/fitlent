@@ -115,7 +115,7 @@
     <div class="modal-card" id="modal-card">
       <div class="modal-close">✖</div>
       <br>
-      <form id="modal-form">
+      <form id="modal-form" class="modal-form">
         <p style="color: black">Закажите сайт только у нас и получите поддержку на полгода бесплатно</p>
         <h4 style="color: black">Введите ваши контактные данные:</h4>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -134,11 +134,19 @@
         </select>
         <br>
         <br>
-        <div id="errors"></div>
+        <div id="errors2" >
+
+        </div>
         <button class="modal-send" id="modal-submit" type="button" onclick="sendForm()">отправить</button>
       </form>
-    </div>
 
+
+
+  </div>
+    <div id="errors" class="modal-card">
+    <p style="color: black">Ваша заявка успешно отправлена</p>
+    <h4 style="color: black">Мы с вами скоро свяжемся</h4>
+  </div>
   </div>
   <!-- ***** секция1 ***** -->
   <section id="rates">

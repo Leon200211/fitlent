@@ -25,13 +25,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/OSPanel/domains/fitlent/fitlent/crm-atelie-card",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/OSPanel/domains/fitlent/fitlent/crm-atelie-card&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\OSPanel\domains\fitlent\fitlent\fitlent_site\public_html\assets\images" />
@@ -70,7 +70,8 @@
       <workItem from="1687887592183" duration="44000" />
       <workItem from="1687887637949" duration="596000" />
       <workItem from="1687889341504" duration="614000" />
-      <workItem from="1687944607036" duration="12769000" />
+      <workItem from="1687944607036" duration="13964000" />
+      <workItem from="1688030186173" duration="4250000" />
     </task>
     <servers />
   </component>

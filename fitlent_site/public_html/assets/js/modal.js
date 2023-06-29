@@ -20,6 +20,7 @@ window.onload = () => {
     for (let i = 0; i < modal_open.length; i++) {
         modal_open[i].addEventListener('click', (e) => {
             modal.style.display = 'flex';
+            card.style.display = 'block'
             modal_select.value = e.target.getAttribute('data')
             modal_select.textContent = e.target.getAttribute('data')
             console.log(e.target.getAttribute('data'))
@@ -28,7 +29,7 @@ window.onload = () => {
                 document.addEventListener('click', (event) => {
                     const withinBoundaries = event.composedPath().includes(blur_modal);
                     if(!withinBoundaries && event.composedPath()[0].className !== 'open_modal') {
-                        errors.textContent = ' '
+                        errors2.textContent = ' '
                         modal_submit.textContent = 'Отправить'
                         modal_phone.value = document.querySelector('#modal-phone').defaultValue
                         modal_name.value = document.querySelector('#modal-name').defaultValue
@@ -38,7 +39,7 @@ window.onload = () => {
                 })
                 document.onkeydown = (ev) => {
                     if(ev.key == "Escape"){
-                        errors.textContent = ''
+                        errors2.textContent = ''
                         modal_submit.textContent = 'Отправить'
                         modal_phone.value = document.querySelector('#modal-phone').defaultValue
                         modal_name.value = document.querySelector('#modal-name').defaultValue
@@ -111,26 +112,32 @@ const modal_submit = document.getElementById('modal-submit')
 let modal_phone = document.getElementById('modal-phone')
 let modal_name = document.getElementById('modal-name')
 let errors = document.querySelector('#errors')
+let errors2 = document.querySelector('#errors2')
 let card = document.querySelector('.modal-card')
 function sendForm(){
     var formID = $(this).attr('id');
     var formNm = $('#' + formID);
     if(modal_name.value == ''){
-        errors.textContent = 'Введите ФИО'
+        errors2.textContent = 'Введите ФИО'
+        errors2.style.color = 'purple'
     }else if(modal_phone.value == '') {
-        errors.textContent = 'Введите номер телефона'
+        errors2.textContent = 'Введите номер телефона'
+        errors2.style.color = 'purple'
     }else{
         $.ajax({
             url: '/mail.php',
             method: 'post',
-            dataType: 'json',
+             dataType: 'json',
             data: {name: modal_name.textContent, phone: modal_phone.textContent, rates: modal_select.value},
             success: function success(data) {
-                const form_clone = $('#modal_form').clone()
-                modal_form.textContent = 'Ваша заявка успешно отправлена'
+                card.style.display = 'none'
+                errors.style.display = 'block'
                 setTimeout(function () {
+                    modal_phone.value = modal_phone.defaultValue
+                    modal_name.value = modal_name.defaultValue
+                    errors.style.display = 'none'
                     modal_container.style.display = 'none'
-                    card.append(form_clone)
+
                     document.querySelector('body').style.overflow = 'auto'
                 }, 1200)
             },
