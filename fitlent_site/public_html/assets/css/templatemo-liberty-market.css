@@ -209,60 +209,74 @@ body {
   transition: .6s;
 }
 .unblock-portfolio{
-  position: relative;
-  top: 200px;
-  margin-left: -2000px;
+  transform: translateX(-1000px);
   transition: .6s;
 }
 .unblock-content{
-  position: relative;
-  display: inline-block;
+  transform: translateX(1000px);
+  display: flex;
   white-space: normal;
+  justify-content: space-between;
   transition: .6s;
-  height: 100px;
+  margin-bottom: 200px;
 }
 .unblock-body{
-
-  position: relative;
-  width: 500px;
-  margin-left: 2000px;
+  flex-direction: row;
   transition: .6s;
 }
 .factory-body{
   top: -70px
 }
-.img-portfolio:hover .unblock-body {
-  margin-left: 0;
+.img-portfolio:hover .unblock-content {
+  transform: translateX(0);
   transition: .6s;
 }
 .img-portfolio:hover .unblock-portfolio {
-  margin-left: 0;
+  transform: translateX(0);
   transition: .6s;
+}
+.gradient{
+  background-color:#cda;
+  min-height:100vw;
+  transition:all .2s ease;
+}
+.gradient:hover{
+  background:linear-gradient(to right,#acd, #fff 30px, #acd 60px) no-repeat -100px 0/100px 100%, #acd;
+  animation:move 5s linear infinite;
+}
+@keyframes move{
+  from{
+    background-position:-100px 0;
+  }
+  to{
+    background-position:120% 0;
+  }
 }
 
 .img-portfolio:hover#atelier:hover{
-  background-image: url("../images/banner-bg500px.jpg");
-  transition: all .6s ease;
+  background:linear-gradient(to right,white 1px, #f3f3f3 1px) no-repeat -200px 0/100px 100%, linear-gradient(45deg, #5214c2, #b113e5);
+  animation:move .1s linear none;
+
 }
 .img-portfolio:hover#factory:hover{
-  background-image: url("../images/banner-bg500px.jpg");
-  transition: all .6s ease;
+  background:linear-gradient(to right,white 1px, #f3f3f3 1px) no-repeat -200px 0/100px 100%, linear-gradient(45deg, #5214c2, #b113e5);
+  animation:move .1s linear none;
 }
 .img-portfolio:hover#samolet:hover{
-  background-image: url("../images/banner-bg500px.jpg");
-  transition: all .6s ease;
+  background:linear-gradient(to right,white 1px, #f3f3f3 1px) no-repeat -200px 0/100px 100%, linear-gradient(45deg, #5214c2, #b113e5);
+  animation:move .1s linear none;
 }
 .img-portfolio:hover#travel-visit:hover{
-  background-image: url("../images/banner-bg500px.jpg");
-  transition: all .6s ease;
+  background:linear-gradient(to right,white 1px, #f3f3f3 1px) no-repeat -200px 0/100px 100%, linear-gradient(45deg, #5214c2, #b113e5);
+  animation:move .1s linear none;
 }
 .img-portfolio:hover#restaurant-visit:hover{
-  background-image: url("../images/banner-bg500px.jpg");
-  transition: all .6s ease;
+  background:linear-gradient(to right,white 1px, #f3f3f3 1px) no-repeat -200px 0/100px 100%, linear-gradient(45deg, #5214c2, #b113e5);
+  animation:move .1s linear none;
 }
 .img-portfolio:hover#ritual-visit:hover{
-  background-image: url("../images/banner-bg500px.jpg");
-  transition: all .6s ease;
+  background:linear-gradient(to right,white 1px, #f3f3f3 1px) no-repeat -200px 0/100px 100%, linear-gradient(45deg, #5214c2, #b113e5);
+  animation:move .1s linear none;
 }
 @media (max-width: 400px){
   .unblock-content{
@@ -1328,11 +1342,12 @@ Currently Market Style
 }
 
 .currently-market .item {
-  background-color: #282b2f;
-  border: 1px solid #404245;
+  background-color: transparent;
+  border: 1px solid transparent;
   border-radius: 20px;
   padding: 30px;
-  /*display: flex;*/
+  display: flex;
+  flex-direction: column;
   margin-bottom: 30px;
 }
 
