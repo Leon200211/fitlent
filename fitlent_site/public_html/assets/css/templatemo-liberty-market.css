@@ -243,10 +243,6 @@ body {
   min-height:100vw;
   transition:all .2s ease;
 }
-.gradient:hover{
-  background:linear-gradient(to right,#acd, #fff 30px, #acd 60px) no-repeat -100px 0/100px 100%, #acd;
-  animation:move 5s linear infinite;
-}
 @keyframes move{
   from{
     background-position:-100px 0;
@@ -257,29 +253,29 @@ body {
 }
 
 .img-portfolio:hover#atelier:hover{
-  background:linear-gradient(to right,white 1px, #f3f3f3 1px) no-repeat -200px 0/100px 100%, linear-gradient(45deg, #5214c2, #b113e5);
-  animation:move .1s linear none;
+  background:linear-gradient(to right, rgba(255, 255, 255, 0.75) 1px, rgba(243, 243, 243, 0.75) 1px) no-repeat -200px 0/100px 100%, linear-gradient(45deg, #5214c2, #b113e5);
+  animation:move .3s linear none;
 
 }
 .img-portfolio:hover#factory:hover{
-  background:linear-gradient(to right,white 1px, #f3f3f3 1px) no-repeat -200px 0/100px 100%, linear-gradient(45deg, #5214c2, #b113e5);
-  animation:move .1s linear none;
+  background:linear-gradient(to right, rgba(255, 255, 255, 0.75) 1px, rgba(243, 243, 243, 0.75) 1px) no-repeat -200px 0/100px 100%, linear-gradient(45deg, #5214c2, #b113e5);
+  animation:move .3s linear none;
 }
 .img-portfolio:hover#samolet:hover{
-  background:linear-gradient(to right,white 1px, #f3f3f3 1px) no-repeat -200px 0/100px 100%, linear-gradient(45deg, #5214c2, #b113e5);
-  animation:move .1s linear none;
+  background:linear-gradient(to right, rgba(255, 255, 255, 0.75) 1px, rgba(243, 243, 243, 0.75) 1px) no-repeat -200px 0/100px 100%, linear-gradient(45deg, #5214c2, #b113e5);
+  animation:move .3s linear none;
 }
 .img-portfolio:hover#travel-visit:hover{
-  background:linear-gradient(to right,white 1px, #f3f3f3 1px) no-repeat -200px 0/100px 100%, linear-gradient(45deg, #5214c2, #b113e5);
-  animation:move .1s linear none;
+  background:linear-gradient(to right, rgba(255, 255, 255, 0.75) 1px, rgba(243, 243, 243, 0.75) 1px) no-repeat -200px 0/100px 100%, linear-gradient(45deg, #5214c2, #b113e5);
+  animation:move .3s linear none;
 }
 .img-portfolio:hover#restaurant-visit:hover{
-  background:linear-gradient(to right,white 1px, #f3f3f3 1px) no-repeat -200px 0/100px 100%, linear-gradient(45deg, #5214c2, #b113e5);
-  animation:move .1s linear none;
+  background:linear-gradient(to right, rgba(255, 255, 255, 0.75) 1px, rgba(243, 243, 243, 0.75) 1px) no-repeat -200px 0/100px 100%, linear-gradient(45deg, #5214c2, #b113e5);
+  animation:move .3s linear none;
 }
 .img-portfolio:hover#ritual-visit:hover{
-  background:linear-gradient(to right,white 1px, #f3f3f3 1px) no-repeat -200px 0/100px 100%, linear-gradient(45deg, #5214c2, #b113e5);
-  animation:move .1s linear none;
+  background:linear-gradient(to right, rgba(255, 255, 255, 0.75) 1px, rgba(243, 243, 243, 0.75) 1px) no-repeat -200px 0/100px 100%, linear-gradient(45deg, #5214c2, #b113e5);
+  animation:move .3s linear none;
 }
 @media (max-width: 400px){
   .unblock-content{
