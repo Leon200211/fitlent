@@ -218,7 +218,10 @@ body {
   white-space: normal;
   justify-content: space-between;
   transition: .6s;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
+}
+.card--title{
+  margin-bottom: 30px;
 }
 .unblock-body{
   flex-direction: row;
