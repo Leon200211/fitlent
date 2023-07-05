@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c82e020-59a6-45e8-9b49-1d9045779d94" name="Changes" comment="" />
+    <list default="true" id="af741f7b-beb1-45d4-a94b-cc431443b203" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,15 +14,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2RYd0NWVW2e0ZMe8EqdC5uvauMl" />
+  <component name="ProjectId" id="2S3wQVxSyN6uW5aqfGJaKTwFHLO" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -33,31 +33,21 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/OSPanel/domains/untitled4",
+    "last_opened_file_path": "C:/OSPanel/domains/crm-atelie-card",
     "list.type.of.created.stylesheet": "CSS",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\OSPanel\domains\crm-atelie-card\assets\imgs" />
-    </key>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6c82e020-59a6-45e8-9b49-1d9045779d94" name="Changes" comment="" />
-      <created>1687430724536</created>
+      <changelist id="af741f7b-beb1-45d4-a94b-cc431443b203" name="Changes" comment="" />
+      <created>1688388556758</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1687430724536</updated>
-      <workItem from="1687430725763" duration="22736000" />
-      <workItem from="1687513104404" duration="16239000" />
-      <workItem from="1687856313474" duration="2980000" />
-      <workItem from="1687889316035" duration="2039000" />
-      <workItem from="1687948861211" duration="3294000" />
-      <workItem from="1688122763005" duration="604000" />
-      <workItem from="1688209219588" duration="10000" />
+      <updated>1688388556758</updated>
+      <workItem from="1688388557959" duration="14472000" />
+      <workItem from="1688547931200" duration="2557000" />
     </task>
     <servers />
   </component>

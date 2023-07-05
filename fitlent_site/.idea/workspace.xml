@@ -28,7 +28,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/OSPanel/domains/fitlent/fitlent/crm-atelie-card&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/OSPanel/domains/fitlent/fitlent/fitlent_site&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -71,7 +71,11 @@
       <workItem from="1687887637949" duration="596000" />
       <workItem from="1687889341504" duration="614000" />
       <workItem from="1687944607036" duration="13964000" />
-      <workItem from="1688030186173" duration="10435000" />
+      <workItem from="1688030186173" duration="10760000" />
+      <workItem from="1688114355344" duration="18000" />
+      <workItem from="1688114397316" duration="1237000" />
+      <workItem from="1688122736901" duration="10000" />
+      <workItem from="1688295970462" duration="341000" />
     </task>
     <servers />
   </component>
