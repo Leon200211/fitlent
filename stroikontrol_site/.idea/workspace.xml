@@ -33,7 +33,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/OSPanel/domains/fitlent/fitlent/stroikontrol_site",
+    "last_opened_file_path": "C:/OSPanel/domains/test-spa",
     "list.type.of.created.stylesheet": "CSS",
     "vue.rearranger.settings.migration": "true"
   }
@@ -53,7 +53,9 @@
       <workItem from="1688633666426" duration="5003000" />
       <workItem from="1689182337532" duration="608000" />
       <workItem from="1689228225517" duration="1235000" />
-      <workItem from="1689333900602" duration="3216000" />
+      <workItem from="1689333900602" duration="4550000" />
+      <workItem from="1689344529885" duration="6000" />
+      <workItem from="1689344543381" duration="572000" />
     </task>
     <servers />
   </component>
