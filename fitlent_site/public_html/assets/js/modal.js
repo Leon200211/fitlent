@@ -63,46 +63,6 @@ window.onload = () => {
         modal.style.display = 'none';
         document.querySelector('body').style.overflow = 'auto'
     })
-    window.addEventListener('scroll', checkScroll);
-    document.addEventListener('DOMContentLoaded', checkScroll);
-
-    function checkScroll() {
-        let scrollPos = window.scrollY;
-        // console.log(scrollPos)
-
-        if (scrollPos == 0 && scrollPos < 960) {
-            header_about.classList.remove('active');
-            header_portfolio.classList.remove('active');
-            header_rates.classList.remove('active')
-            header_works.classList.remove('active')
-            header_main.className = 'active'
-        } else if (scrollPos > 860 && scrollPos < 1610) {
-            header_main.classList.remove('active');
-            header_about.classList.remove('active');
-            header_portfolio.classList.remove('active');
-            header_works.classList.remove('active')
-            header_rates.className = 'active'
-        } else if (scrollPos > 1610 && scrollPos < 2060) {
-            header_rates.classList.remove('active');
-            header_main.classList.remove('active');
-            header_portfolio.classList.remove('active');
-            header_works.classList.remove('active')
-            header_about.className = 'active'
-        } else if (scrollPos > 2060 && scrollPos < 2760) {
-            header_about.classList.remove('active')
-            header_rates.classList.remove('active')
-            header_main.classList.remove('active')
-            header_portfolio.classList.remove('active')
-            header_works.className = 'active'
-        }
-        else if (scrollPos > 2760) {
-            header_about.classList.remove('active')
-            header_rates.classList.remove('active')
-            header_main.classList.remove('active')
-            header_works.classList.remove('active')
-            header_portfolio.className = 'active'
-        }
-    };
 
 }
 const modal_container = document.querySelector('.modal-container')

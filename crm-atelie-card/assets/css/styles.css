@@ -491,13 +491,10 @@ section.element-show {
 .people-sharp{
     color: gray;
 }
-.trumps-left,
-.trumps-right
-{
-    position: relative;
-    display: table-cell;
-    width: 50%;
-
+.trump{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .trump-item{
@@ -521,6 +518,10 @@ section.element-show {
     border-radius: 35px;
 }
 .fixed-content{
+    position: sticky;
+    top: 500px;
+    right: 0;
+    float: right;
     font-family: avenir, sans-serif;
     display: flex;
     justify-content: center;
@@ -531,6 +532,11 @@ section.element-show {
     border-radius: 30px;
     transition: .5s;
     font-weight: 600;
+    width: 100%;
+    max-width: 500px;
+}
+.fixed-title{
+    margin-bottom: 15px;
 }
 footer{
     height: 30vh;

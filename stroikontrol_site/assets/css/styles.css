@@ -4,11 +4,10 @@
     font-family: Roboto;
 }
 header{
-    height: 120vh;
     background: linear-gradient(to top, #A5ADC6, #ffffff 85%);
 }
 .container{
-    margin: 0 72px;
+    margin: 0 142px;
 }
 .header--line{
     padding: 38px 0;
@@ -123,12 +122,16 @@ header .container{
     margin-top: 150px;
     justify-content: space-between;
     line-height: 30px;
+    margin-bottom: 50px;
 }
 .down--item{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     max-width: 320px;
+    font-size: 20px;
+}
+.down--item:not(:last-of-type){
+    margin-right: 40px;
 }
 .down--item span{
     color: black;
@@ -160,13 +163,13 @@ header .container{
 .about-content{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 90%;
-    margin-top: 60px;
+    width: 100%;
+    margin-top: 160px;
 }
 .about-body{
-    max-width: 500px;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
 }
@@ -219,6 +222,7 @@ header .container{
 .siteandapp--body{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .content--text{
     display: flex;
@@ -376,6 +380,14 @@ footer{
     display: flex;
     align-items: center;
 }
+.siteandapp--img{
+    width: 100%;
+    max-width: 400px;
+}
+.about-img{
+    max-width: 600px;
+    width: 100%;
+}
 .tg-contact{
     color: #000;
     text-align: center;
@@ -386,4 +398,162 @@ footer{
 }
 .about{
     margin-bottom: 50px;
+}
+section{
+    opacity: 0;
+}
+section.element-show {
+    opacity: 1;
+    transition: opacity 1.5s;
+}
+@media (max-width: 1450px) {
+    .container{
+        max-width: 1450px;
+        margin: 0 100px;
+    }
+}
+
+@media(max-width: 1360px ){
+    .about-body{
+        max-width: 330px;
+    }
+    .about-content{
+        justify-content: space-between;
+    }
+    .container{
+        max-width: 1360px;
+        margin: 0 90px;
+    }
+}
+@media(max-width: 1180px){
+    .header--line{
+        flex-wrap: wrap;
+    }
+    .about-img{
+        margin-bottom: 20px;
+    }
+    .about-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        max-width: 1180px;
+        margin: 0 60px;
+    }
+    .about-body{
+        max-width: 600px;
+    }
+    #img2{
+        order: 0;
+    }
+    #body2{
+        order: 1;
+    }
+}
+@media (max-width: 1150px) {
+    .imgs{
+        display: none;
+    }
+}
+@media (max-width: 980px) {
+    .siteandapp--body{
+        flex-direction: column;
+
+    }
+    .content--text{
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+    #body-img{
+        max-width: 400px;
+        order: 1;
+    }
+}
+@media (max-width: 840px) {
+    .header--right{
+        display: none;
+    }
+    .header--down{
+        flex-direction: column;
+        align-items: center;
+    }
+    .down--item{
+        margin-bottom: 15px;
+    }
+    .siteandapp--body{
+        flex-direction: column;
+    }
+    .content--text{
+        margin-left: 0;
+    }
+    .wrapper{
+        padding: 12px 10px;
+    }
+    #body-img{
+        order: 1;
+    }
+    .container{
+        margin: 0 40px;
+    }
+    .footer-contacts{
+        flex-direction: column;
+    }
+
+}
+@media(max-width: 840px){
+    .down--item:not(:last-of-type){
+        margin-right: 0;
+    }
+}
+@media(max-width: 400px){
+    .text--title{
+        font-size: 20px;
+    }
+    .text--body{
+        font-size: 18px;
+    }
+    .imgs{
+        display: none;
+    }
+    .header--right{
+        display: none;
+    }
+    .header--down{
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    .down--item{
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+    .wrapper{
+        padding: 12px 10px;
+    }
+    .siteandapp--body{
+        flex-direction: column;
+    }
+    .content--text{
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+    #body-img{
+        order: 1;
+    }
+    .container{
+        margin: 0 30px;
+    }
+    .sitendapp--title{
+        font-size: 22px;
+    }
+    .number, .mail-address, .tg-contact{
+        font-size: 14px;
+    }
+    .body--title{
+        font-size: 28px;
+    }
+    .contactus{
+        padding: 16px 17px;
+        font-size: 14px;
+    }
 }
