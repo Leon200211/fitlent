@@ -27,6 +27,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
@@ -38,6 +39,15 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+=======
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+>>>>>>> f147423c346d2030e3f7724ab0ee8279fa16f004
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\OSPanel\domains\crm-atelie-card\assets\imgs" />
@@ -58,9 +68,13 @@
       <workItem from="1687948861211" duration="3294000" />
       <workItem from="1688122763005" duration="604000" />
       <workItem from="1688209219588" duration="10000" />
+<<<<<<< HEAD
       <workItem from="1688557325943" duration="634000" />
       <workItem from="1688633666442" duration="799000" />
       <workItem from="1689065135222" duration="1643000" />
+=======
+      <workItem from="1688911886824" duration="678000" />
+>>>>>>> f147423c346d2030e3f7724ab0ee8279fa16f004
     </task>
     <servers />
   </component>

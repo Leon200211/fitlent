@@ -20,18 +20,20 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="ProjectId" id="2Qc9J959fczR2byldBC33IaLeDb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/OSPanel/domains/fitlent/fitlent/fitlent_site&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../crm-atelie-card" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\OSPanel\domains\fitlent\fitlent\fitlent_site\public_html\assets\images" />
@@ -76,6 +78,7 @@
       <workItem from="1688114397316" duration="1237000" />
       <workItem from="1688122736901" duration="10000" />
       <workItem from="1688295970462" duration="341000" />
+      <workItem from="1688911684790" duration="1212000" />
     </task>
     <servers />
   </component>
