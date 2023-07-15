@@ -382,10 +382,13 @@ footer{
 }
 .siteandapp--img{
     width: 100%;
+    max-width: 200px;
+}
+.notebook{
     max-width: 400px;
 }
 .about-img{
-    max-width: 600px;
+    max-width: 700px;
     width: 100%;
 }
 .tg-contact{

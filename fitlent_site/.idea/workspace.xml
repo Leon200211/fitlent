@@ -28,12 +28,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../crm-atelie-card" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/OSPanel/domains/task_js",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\OSPanel\domains\fitlent\fitlent\fitlent_site\public_html\assets\images" />
@@ -79,6 +80,9 @@
       <workItem from="1688122736901" duration="10000" />
       <workItem from="1688295970462" duration="341000" />
       <workItem from="1688911684790" duration="1212000" />
+      <workItem from="1689353237954" duration="41000" />
+      <workItem from="1689353297727" duration="6000" />
+      <workItem from="1689420216444" duration="96000" />
     </task>
     <servers />
   </component>
