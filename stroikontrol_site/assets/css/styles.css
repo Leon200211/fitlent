@@ -223,6 +223,7 @@ header .container{
     display: flex;
     justify-content: center;
     align-items: center;
+    max-height: 400px;
 }
 .content--text{
     display: flex;
@@ -431,6 +432,12 @@ section.element-show {
         margin: 0 90px;
     }
 }
+@media (max-width: 1360px) {
+    .container{
+        max-width: 1280px;
+        margin: 0 75px;
+    }
+}
 @media(max-width: 1180px){
     .header--line{
         flex-wrap: wrap;
@@ -466,7 +473,7 @@ section.element-show {
 @media (max-width: 980px) {
     .siteandapp--body{
         flex-direction: column;
-
+        max-height: max-content;
     }
     .content--text{
         margin-left: 0;
