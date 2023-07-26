@@ -201,10 +201,6 @@ body {
 #ritual-visit{
   background-image: url("../images/ritual-visit.png");
 }
-.img-portfolio:hover .block-portfolio {
-  margin-left: -400px;
-  transition: .6s;
-}
 .block-portfolio{
   transition: .6s;
 }
@@ -316,7 +312,7 @@ body {
 }
 .ourWorks--card{
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   text-align: left;
   flex-direction: column;
   background-color: #F3F4F9;
@@ -329,6 +325,10 @@ body {
   width: auto;
   word-break: break-all;
   transition: .5s;
+}
+.card-text{
+  display: flex;
+  flex-direction: column;
 }
 .ourWorks--card .card-btn{
   display: flex;
@@ -358,9 +358,10 @@ body {
   transition: .5s;
 }
 .ourWorks-card-body{
+  word-break: break-word;
   font-size: 18px;
   max-width: 500px;
-  margin-bottom: 45px;
+  margin-bottom: 20px;
   width: auto;
   color: #9CA5B0;
   transition: .5s;
@@ -962,7 +963,10 @@ Banner Style
 }
 
 .main-banner p {
-  margin-top: 20px;
+  margin-top: 10px;
+}
+.main-banner p a{
+  color: white;
 }
 
 .main-banner .buttons {

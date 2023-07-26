@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
+    <title>СтройКонтроль</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/imgs/free-safety-helmet-icon-clipart-download-safety-helmet-helmet-icon-clothing-apparel-hardhat-baseball-cap-transparent-png-61156.png">
 </head>
 <body>
 <header>
@@ -18,7 +19,19 @@
             <div class="header--right">
                 <span>Контакты</span>
                 <a href="" class="header--demo">Демо</a>
-                <a href="" class="header--try">Попробовать</a>
+                <a data-fancybox href="#hidden" class="header--try">Попробовать</a>
+
+                <div style="display: none; width: 500px;" id="hidden">
+                    <h2>Контент из скрытого div</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim
+                        vulputate eros.
+                    </p>
+                    <p>
+                        Donec hendrerit efficitur ex vitae euismod. Maecenas ut leo vitae ipsum dictum
+                        cursus vel vitae nulla.
+                    </p>
+                </div>
             </div>
         </div>
         <div class="header--body">
@@ -175,6 +188,10 @@
     </div>
 </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
 <script src="assets/js/app.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

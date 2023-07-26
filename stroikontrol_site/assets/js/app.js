@@ -5,6 +5,22 @@ window.onload = () => {
     const body = document.querySelectorAll('.siteandapp--body')
     const radio = document.querySelectorAll('.radio')
     radio.forEach(el => {
+        setInterval(test, 5000);
+        let i = 1;
+
+        function test() {
+            i = (i % 2) + 1;
+            document.getElementById('color-' + i).checked = true;
+            if (checkbox_1.checked) {
+                title.textContent = 'Сайт "СтройКонтроль"'
+                body[0].classList.remove('disabled')
+                body[1].classList.add('disabled')
+            } else if (checkbox_2.checked) {
+                title.textContent = 'Приложение "СтройКонтроль"'
+                body[1].classList.remove('disabled')
+                body[0].classList.add('disabled')
+            }
+        }
         el.onchange = () => {
             if (checkbox_1.checked) {
                 title.textContent = 'Сайт "СтройКонтроль"'
@@ -17,7 +33,13 @@ window.onload = () => {
             }
         }
     })
-
+    // setInterval(test, 1000);
+    // let i = 1;
+    //
+    // function test() {
+    //     i = (i % 4) + 1;
+    //     document.getElementById('color-' + i).checked = true;
+    // }
     function onEntry(entry) {
         entry.forEach(change => {
             if (change.isIntersecting) {
@@ -36,5 +58,12 @@ window.onload = () => {
         observer.observe(elm);
         console.log(elm)
     }
+    $('#btn').click(function(){
+        console.log('123')
+        $.fancybox.open({
+            src: '#hidden',
+            type: 'inline'
+        });
+    });
 }
 

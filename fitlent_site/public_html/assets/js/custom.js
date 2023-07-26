@@ -261,7 +261,7 @@
 			}
 		})
 	}, {
-		threshold: 0.5,
+		threshold: 0.4,
 	})
 	document.querySelectorAll('section').forEach((section) => { observer.observe(section)})
 

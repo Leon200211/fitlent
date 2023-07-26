@@ -1,13 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
-    font-family: Roboto;
+    font-family: 'Poppins', sans-serif;
 }
 header{
     background: linear-gradient(to top, #A5ADC6, #ffffff 85%);
 }
 .container{
-    margin: 0 142px;
+    margin: 0 182px;
 }
 .header--line{
     padding: 38px 0;
@@ -32,7 +33,6 @@ header{
     padding: 15px 41px;
     text-align: center;
     font-size: 16px;
-    font-family: Roboto;
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
@@ -224,6 +224,7 @@ header .container{
     justify-content: center;
     align-items: center;
     max-height: 400px;
+    transition: .5s;
 }
 .content--text{
     display: flex;

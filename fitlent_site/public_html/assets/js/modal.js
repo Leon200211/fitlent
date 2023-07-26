@@ -12,13 +12,9 @@ window.onload = () => {
     const modal_close = document.querySelector('.modal-close')
     const modal = document.querySelector('.modal-container')
     const modal_select = document.querySelector('#dynamic-select')
-    const header_rates = document.querySelector('#rates-head')
-    const header_main = document.querySelector('#main-head')
-    const header_portfolio = document.querySelector('#portfolio-head')
-    const header_about = document.querySelector('#about-head')
-    const header_works = document.querySelector('#products')
     for (let i = 0; i < modal_open.length; i++) {
         modal_open[i].addEventListener('click', (e) => {
+            document.querySelector('body').style.paddingRight = '17px'
             modal.style.display = 'flex';
             card.style.display = 'block'
             modal_select.value = e.target.getAttribute('data')
@@ -35,6 +31,7 @@ window.onload = () => {
                         modal_name.value = document.querySelector('#modal-name').defaultValue
                         modal.style.display = 'none'
                         document.querySelector('body').style.overflow = 'auto'
+                        document.querySelector('body').style.paddingRight = '0'
                     }
                 })
                 document.onkeydown = (ev) => {
@@ -45,6 +42,7 @@ window.onload = () => {
                         modal_name.value = document.querySelector('#modal-name').defaultValue
                         modal.style.display = 'none'
                         document.querySelector('body').style.overflow = 'auto'
+                        document.querySelector('body').style.paddingRight = '0'
                     }
                 }
 
@@ -62,6 +60,7 @@ window.onload = () => {
         modal_name.value = modal_name.defaultValue
         modal.style.display = 'none';
         document.querySelector('body').style.overflow = 'auto'
+        document.querySelector('body').style.paddingRight = '0'
     })
 
 }
@@ -97,7 +96,7 @@ function sendForm(){
                     modal_name.value = modal_name.defaultValue
                     errors.style.display = 'none'
                     modal_container.style.display = 'none'
-
+                    document.querySelector('body').style.paddingRight = '0'
                     document.querySelector('body').style.overflow = 'auto'
                 }, 1200)
             },

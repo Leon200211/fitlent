@@ -28,13 +28,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/OSPanel/domains/task_js",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/OSPanel/domains/fitlent/fitlent/fitlent_site&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\OSPanel\domains\fitlent\fitlent\fitlent_site\public_html\assets\images" />
@@ -83,6 +83,9 @@
       <workItem from="1689353237954" duration="41000" />
       <workItem from="1689353297727" duration="6000" />
       <workItem from="1689420216444" duration="96000" />
+      <workItem from="1690213466634" duration="595000" />
+      <workItem from="1690372330902" duration="12000" />
+      <workItem from="1690374810310" duration="2025000" />
     </task>
     <servers />
   </component>
