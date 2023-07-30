@@ -3,7 +3,7 @@ $name = $_POST['name'];
 $phone = $_POST['phone'];
 $rates = $_POST['rates'];
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
-    $to      = 'fitlent@fitlent.ru';
+    $to      = 'leon200207@yandex.ru';
     $subject = 'Новый заказ!';
     $message = 'Заказ от: '.$name.' Номер телефона: '.$phone.' По тарифу: '.$rates;
 
