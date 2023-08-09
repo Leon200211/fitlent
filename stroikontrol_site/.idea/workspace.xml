@@ -33,7 +33,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/OSPanel/domains/task_js",
+    "last_opened_file_path": "C:/OSPanel/domains/Interactive-monitoring-platform/website/public_html",
     "list.type.of.created.stylesheet": "CSS",
     "vue.rearranger.settings.migration": "true"
   }
@@ -61,6 +61,8 @@
       <workItem from="1689589058625" duration="1836000" />
       <workItem from="1689603685439" duration="800000" />
       <workItem from="1690364778719" duration="6712000" />
+      <workItem from="1690544788429" duration="838000" />
+      <workItem from="1690621285840" duration="1203000" />
     </task>
     <servers />
   </component>

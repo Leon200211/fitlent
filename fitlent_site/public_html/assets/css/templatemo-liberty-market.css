@@ -317,6 +317,7 @@ body {
   flex-direction: column;
   background-color: #F3F4F9;
   max-width: 300px;
+  min-width: 300px;
   padding: 15px;
   border-radius: 15px;
   cursor: pointer;
@@ -944,7 +945,6 @@ Banner Style
   padding-top: 290px;
   padding-bottom: 240px;
   background-color: #2a2a2a;
-  height: 100vh;
 }
 
 .main-banner h6 {
@@ -2092,6 +2092,9 @@ Create Page Style
   width: 100%;
   text-align: center;
 }
+.border-button, .main-button{
+  text-align: center;
+}
 
 
 
@@ -2195,7 +2198,7 @@ body {
     overflow-y: scroll;
   }
   .buttons{
-    display: flex;
+    display: block;
     flex-wrap: wrap;
   }
   h2{

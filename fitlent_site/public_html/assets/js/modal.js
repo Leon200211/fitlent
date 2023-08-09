@@ -87,7 +87,7 @@ function sendForm(){
             url: '/mail.php',
             method: 'post',
              dataType: 'json',
-            data: {name: modal_name.textContent, phone: modal_phone.textContent, rates: modal_select.value},
+            data: {name: modal_name.value, phone: modal_phone.value, rates: modal_select.value},
             success: function success(data) {
                 card.style.display = 'none'
                 errors.style.display = 'block'
