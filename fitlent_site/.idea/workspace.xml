@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="314940f6-8abb-4d59-8330-ba490bc0a60e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/public_html/assets/css/templatemo-liberty-market.css" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/assets/css/templatemo-liberty-market.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public_html/assets/js/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/assets/js/modal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../stroikontrol_site/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../stroikontrol_site/.idea/workspace.xml" afterDir="false" />
+=======
+>>>>>>> 4a7d624022e2d8833d441f3578fba09a5782e76c
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +43,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
+<<<<<<< HEAD
     "last_opened_file_path": "C:/OSPanel/domains/fitlent/fitlent/fitlent_site",
+=======
+    "last_opened_file_path": "D:/my_data/sites/domains/build_control_api/build_control_api",
+>>>>>>> 4a7d624022e2d8833d441f3578fba09a5782e76c
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -92,11 +99,14 @@
       <workItem from="1689353237954" duration="41000" />
       <workItem from="1689353297727" duration="6000" />
       <workItem from="1689420216444" duration="96000" />
+<<<<<<< HEAD
       <workItem from="1690213466634" duration="595000" />
       <workItem from="1690372330902" duration="12000" />
       <workItem from="1690374810310" duration="2844000" />
       <workItem from="1690726739415" duration="386000" />
       <workItem from="1691600770233" duration="318000" />
+=======
+>>>>>>> 4a7d624022e2d8833d441f3578fba09a5782e76c
     </task>
     <servers />
   </component>
